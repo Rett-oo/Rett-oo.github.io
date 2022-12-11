@@ -1,0 +1,68 @@
+.ghost,
+.glitch {
+  opacity: 0.25;
+}
+
+#message {
+  position: relative;
+  height: 100%;
+  width: 42%;
+  min-height: 150px;
+  margin:auto;
+  border-radius:  15px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+#message p {
+  margin-bottom: 3px;
+}
+#animate {
+  text-shadow: 0 0 8px rgba(209, 194, 165, 0.1);
+  position: relative;
+  font-smoothing: antialiased;
+  font-size: 20px;
+  color: #272d3b;
+  bottom: 0;
+  font-weight: 400;
+  font-style: italic;
+}
+.title {
+  text-align: center;
+  font-size: 20px;
+
+}
+#title_container {
+  background: linear-gradient(180deg, #EDF2FB 0%, #FFFFFF 100%);
+  position: relative;
+  text-align: center;
+  height: 50%;
+  left: 0;
+  top: 0;
+  font-weight: 400;
+  font-style: italic;
+
+}
+#title_container:before {
+  pointer-events: none;
+  position: relative;
+  height: 50%;
+  width: 100%;
+  content: "";
+  left: 0;
+  top: 0;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+@media (max-width: 1000px) {
+    #message {
+      font-size: 1.8vh;
+      width: 100%;
+  }
+}
+@media (max-width: 370px) {
+  #message {
+    font-size: 1.5vh;
+}
+}

@@ -1,0 +1,244 @@
+{
+    "html" : [
+        "index.html",
+        "project1.html",
+        "project2.html"
+    ],
+    "css" : [
+        {"0_defalut.css" : [
+            "html",
+            "body",
+            "*",
+            "a"
+        ]},
+        {"100_animation.css": [
+            {"PARTICALS": [
+                "canvas",
+                "#particles-js",
+                ".text"
+            ]},
+            {"hmbrgr menu animation": [
+                ".change",
+                ".change .bar",
+                ".change #bar1",
+                ".change #bar2",
+                ".change #bar3",
+                ".change-bg"
+            ]},
+            {"INTO SCREEN ANIMATION": [
+                {"ABOUT": [
+                    ".am_header._after",
+                    ".photo_container._after",
+                    ".pi_text._after",
+                    ".mi_text._after",
+                    ".wm_header._after",
+                    ".accordion_box._after",
+                    ".mp_header._after"
+                ]},
+                {"PROJECTS": [
+                    ".anno_container._after",
+                    ".this_website_container._after",
+                    ".sqlproj_container._after",
+                    ".parser_container._after",
+                    ".telegrambot_container._after",
+                    ".guianalitics_container._after"
+                ]},
+                {"WORKFLOW": [
+                    ".ep_header._after"
+                ]},
+                {"CONTACTS": [
+                    ".c_header._after"
+            ]}]},
+            {"ANIMATION CONTACTS LINK": [
+                ".my_contacts_box>ul>li a:hover::before",
+                ".my_contacts_box>ul>li a::after",
+                ".my_contacts_box>ul>li a::after",
+                ".my_contacts_box>ul>li a:hover::after"
+        ]}]},
+        {"1_main_page.css": [
+            {"HEADER" : [
+                ".header_container",
+                ".header_logo",
+                "#my",
+                "#website",
+                "#portfolio",
+                {"top buttons": [
+                    ".topbar_container",
+                    ".nav-item",
+                    ".top_button_box",
+                    ".border",
+                    ".nav-link",
+                    ".top_button_item:hover",
+                    ".git_logo>a>img",
+                    ".git_logo>a>img:hover"
+                ]},
+                {"HMBRG MENU": [
+                    "#menu",
+                    "#menu-bar",
+                    ".bar",
+                    "#bar1",
+                    "#bar3",
+                    ".nav_hmbrg",
+                    ".nav_hmbrg ul",
+                    ".nav_hmbrg li",
+                    ".nav_hmbrg li a",
+                    ".nav_hmbrg li a:hover",
+                    ".menu-bg, #menu",
+                    ".menu-bg"
+                ]}
+            ]},
+            {"alert": [
+                ".alert_container",
+                ".alert-primary",
+                ".btn-close",
+                ".alert-dismissible .btn-close"
+            ]},
+            {"101_message.css" : [
+                ".ghost,",
+                ".glitch",
+                "#message",
+                "#message p",
+                "#animate",
+                ".title",
+                "#title_container",
+                "#title_container:before"
+            ]},
+            {"SECTION": [
+                {"ABOUT": [
+                    ".am_header",
+                    ".about_me_row",
+                    ".about_me_row_li",
+                    ".photo_container",
+                    ".photo_container>img",
+                    "#img_upto_1024",
+                    ".personal_information, .more_info_container",
+                    ".personal_information",
+                    ".pi_text",
+                    ".mi_text",
+                    ".mi_text.ru",
+                    ".wm_header",
+                    ".accordion_box"
+                ]},
+                {"MY PROJECTS" : [
+                    ".my_projects_row",
+                    ".mp_header",
+                    ".myprojects_container",
+                    ".myprojects_container>.col-lg-2",
+                    ".anno_container,.this_website_container, .sqlproj_container, .parser_container, .telegrambot_container, .guianalitics_container",
+                    ".spacer_item",
+                    ".h-5 a",
+                    ".anno_container",
+                    ".this_website_container",
+                    ".sqlproj_container",
+                    ".parser_container",
+                    ".telegrambot_container",
+                    ".guianalitics_container",
+                    ".myprojects_container>.col-2 img",
+                    ".sqlproj_container img, .parser_container img, .telegrambot_container img, .guianalitics_container img",
+                    ".telegrambot_container img",
+                    ".excuseme_text"
+                ]},
+                {"WORKFLOW": [
+                    ".ep_header",
+                    ".col_courusel",
+                    ".carousel-inner",
+                    ".time_mngmt",
+                    ".tto",
+                    ".time_to",
+                    ".om_word",
+                    {"102_arrow.css": [
+                        "#arrowAnim",
+                        ".arro",
+                        ".arrow",
+                        ".arrowSliding",
+                        ".delay1",
+                        ".delay2",
+                        ".delay3"
+                    ]}
+                ]},
+                {"CONTACTS": [
+                    ".c_header",
+                    ".my_contacts",
+                    ".my_contacts_box",
+                    ".my_contacts_box>ul",
+                    ".my_contacts_box>ul>li",
+                    ".my_contacts_box>ul>li a",
+                    ".my_contacts_box>ul>li a::before",
+                    ".my_contacts_box>ul>li a::before",
+                    ".my_contacts_box>ul>li a span"
+                ]}
+            ]},
+            {"FOOTER": [
+                ".footer_container",
+                ".lang_area",
+                ".footer_vertical_line",
+                {"switch_lang_btns": [
+                    ".rus_lang",
+                    ".lang_buttons",
+                    ".lang_buttons .button",
+                    ".lang_buttons .rus_lang"
+                ]}
+            ]}]},
+        {"2_project_page.css": [
+
+        ]},
+        {"mediarequests.css": [
+            {"max-width: 1750px": [
+                ".spacer_item",
+                ".myprojects_container>.col-lg-2",
+                ".my_contacts_box"
+            ]},
+            {"max-width: 1400px": [
+                ".photo_container",
+                "#img_upto_1024",
+                ".about_me_row",
+                ".personal_information_list"
+            ]},
+            {"max-width: 992px": [
+                ".top_button_box",
+                "#menu",
+                ".alert_container",
+                ".more_info_container",
+                ".personal_information_list",
+                "#img_upto_1024",
+                ".tto",
+                ".time_to"
+            ]},
+            {"max-width: 700px": [
+                ".menu-bg, #menu",
+                ".col_courusel",
+                ".time_mngmt",
+                ".carousel_item_text",
+                ".time_to",
+                ".myprojects_container",
+                ".my_contacts_box>ul"
+            ]},
+            {"max-width: 500px": [
+                ".personal_information_list",
+                ".myprojects_container",
+                ".my_contacts_box",
+                ".menu-bg, #menu",
+                ".git_logo"
+            ]},
+            {"max-width: 320px": [
+                ".alert_container"
+            ]}
+        ]}
+        ],
+    "js": [
+        "animation_message2.js",
+        "bg_animation.js",
+        "block_animate.js",
+        "hmbg_btn.js",
+        "language.js",
+        "path.js"
+    ]
+
+
+
+
+
+
+
+}
+

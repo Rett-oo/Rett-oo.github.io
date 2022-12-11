@@ -1,0 +1,131 @@
+/*  */
+
+@media (max-width: 1750px) {
+    .spacer_item {
+        display: block;
+    }
+    .myprojects_container>.col-lg-2 {
+        width: 20%;
+    }
+    .my_contacts_box {
+        background-color: #ffffff;
+        width: 80%;
+        height: 80%;
+        padding: 7% 3% 7% 3%;
+        margin: 5%;
+        font-size: 100%;
+    }
+
+
+}
+@media (max-width: 1400px) {
+    .photo_container {
+        display: none;
+        visibility: hidden;
+
+    }
+    #img_upto_1024 {
+        display: inline;
+        visibility: visible;
+        padding: 0;
+    }
+    .about_me_row {
+        justify-content: center;
+    }
+    .personal_information_list {
+        position: relative;
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 10%;
+        padding: 1% 5% 1% 5%;
+        width: 160%;
+        left: -70px;
+    }
+}
+@media (max-width: 992px) {
+    .top_button_box {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+    .alert_container {
+        margin-top: 1%;
+        font-size: 100%;
+    }
+    .more_info_container {
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    .personal_information_list {
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 10%;
+        margin-left: 10%;
+        padding: 1% 5% 1% 5%;
+        width: 100%;
+        text-align: start;
+    }
+    #img_upto_1024 {
+        width: 50%;
+        border: 4px solid white;
+        border-radius: 550px;
+    }
+    .tto {
+        margin-top: 7px;
+        align-items: center;
+        text-align: center;
+    }
+    .time_to {
+        margin: auto;
+    }
+}
+@media (max-width: 700px) {
+    .menu-bg, #menu {
+        left: 70%;
+    }
+    .col_courusel {
+        display: inline-block;
+    }
+    .time_mngmt {
+        display: none;
+    }
+    .carousel_item_text {
+        display: inline;
+        text-align: center;
+    }
+    .time_to {
+        text-align: center;
+        font-size: 4vw;
+    }
+    .myprojects_container {
+        font-size: 80%;
+    }
+    .my_contacts_box>ul {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .personal_information_list {
+        margin-left: 18%;
+    }
+    .myprojects_container {
+        font-size: 60%;
+    }
+    .my_contacts_box {
+        font-size: 60%;
+    }
+    .menu-bg, #menu {
+        left: 57%;
+    }
+    .git_logo {
+        margin-right: 12px;
+    }
+
+}
+@media (max-width: 320px) {
+    .alert_container {
+        font-size: 80%;
+    }
+}

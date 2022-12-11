@@ -1,0 +1,45 @@
+#arrowAnim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+}
+.arro {
+    width: 40%;
+}
+.arrow {
+    width: 10%;
+    height: 5%;
+    border: 0.5vw solid;
+    border-color: black transparent transparent black;
+    transform: rotate(135deg);
+}
+.arrowSliding {
+    position: relative;
+    -webkit-animation: slide 4s linear infinite;
+            animation: slide 4s linear infinite;
+}
+.delay1 {
+    -webkit-animation-delay: 1s;
+      animation-delay: 1s;
+}
+.delay2 {
+-webkit-animation-delay: 2s;
+animation-delay: 2s;
+}
+.delay3 {
+-webkit-animation-delay: 3s;
+animation-delay: 3s;
+}
+@-webkit-keyframes slide {
+0% { opacity:0; transform: translateX(-5vw); }
+20% { opacity:1; transform: translateX(-1vw); }
+80% { opacity:1; transform: translateX(5vw); }
+100% { opacity:0; transform: translateX(10vw); }
+}
+@keyframes slide {
+0% { opacity:0; transform: translateX(-5vw); }
+20% { opacity:1; transform: translateX(-1vw); }
+80% { opacity:1; transform: translateX(5vw); }
+100% { opacity:0; transform: translateX(10vw); }
+}
