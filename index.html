@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/styles/0_default.css">
+    <link rel="stylesheet" href="source/styles/1_main_page.css">
+    <link rel="stylesheet" href="source/styles/100_animation.css">
+    <link rel="stylesheet" href="source/styles/200_mediarequests.css">
+    <link rel="stylesheet" href="source/styles/101_message.css">
+    <link rel="stylesheet" href="source/styles/102_arrow.css">
+</head>
+<body>
+    <div class="background">
+        <!-- <div id="particles-js"></div> -->
+        <!-- HEADER -->
+        <header class="header_container">
+            <div class="header_logo">
+                <div class="header_item" id="my">
+                    <span>MY</span>
+                </div>
+                <div class="header_item" id="website">
+                    <span>WEBSITE</span>
+                </div>
+                <div class="header_item" id="portfolio">
+                    <span >PORTFOLIO</span>
+                </div>
+            </div>
+            <nav class="topbar_container">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <div class="top_button_box" >
+                            <div class="border"></div>
+                            <div data-bs-target="#topbar_container" data-bs-smooth-scroll="true" tabindex="2">
+                                <a class="nav-link rus_lang " href="#scrollspyHeading2">Портфолио</a>
+                                <a class="nav-link en_lang" href="#scrollspyHeading6">Portfolio</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="top_button_box" >
+                            <div class="border"></div>
+                            <div data-bs-target="#topbar_container" data-bs-smooth-scroll="true" tabindex="0">
+                                <a class="nav-link rus_lang" href="#scrollspyHeading1">Обо мне</a>
+                                <a class="nav-link en_lang" href="#scrollspyHeading5">About me</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="top_button_box" >
+                            <div class="border"></div>
+                            <div data-bs-target="#topbar_container" data-bs-smooth-scroll="true" tabindex="0">
+                                <a class="nav-link rus_lang" href="#scrollspyHeading3">План обучения</a>
+                                <a class="nav-link en_lang" href="#scrollspyHeading7">Education plan</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="top_button_box" >
+                            <div class="border"></div>
+                            <div data-bs-target="#topbar_container" data-bs-smooth-scroll="true" tabindex="0">
+                                <a class="nav-link rus_lang" href="#scrollspyHeading4">Контакты</a>
+                                <a class="nav-link en_lang" href="#scrollspyHeading8">Contacts</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <nav class="nav_hmbrg" id="nav">
+                    <ul>
+                        <li>
+                            <div data-bs-target="#topbar_container" data-bs-smooth-scroll="true" tabindex="2">
+                                <a class="hmbrgr_text rus_lang " href="#scrollspyHeading2">Портфолио</a>
+                                <a class="hmbrgr_text en_lang" href="#scrollspyHeading6">Portfolio</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div data-bs-target="#topbar_container" data-bs-smooth-scroll="true" tabindex="0">
+                                <a class="hmbrgr_text rus_lang" href="#scrollspyHeading1">Обо мне</a>
+                                <a class="hmbrgr_text en_lang" href="#scrollspyHeading5">About me</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div data-bs-target="#topbar_container" data-bs-smooth-scroll="true" tabindex="0">
+                                <a class="hmbrgr_text rus_lang" href="#scrollspyHeading3">План обучения</a>
+                                <a class="hmbrgr_text en_lang" href="#scrollspyHeading7">Education plan</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div data-bs-target="#topbar_container" data-bs-smooth-scroll="true" tabindex="0">
+                                <a class="hmbrgr_text rus_lang" href="#scrollspyHeading4">Контакты</a>
+                                <a class="hmbrgr_text en_lang" href="#scrollspyHeading8">Contacts</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+            <div class="git_logo">
+                <a href="https://github.com/Rett-oo">
+                    <img  src="source/images/github-mark.svg" alt="git_img">
+                </a>
+            </div>
+        </header>
+        <!-- ALERT -->
+        <div class="alert_container">
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="info-fill" viewBox="0 0 16 16">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1
+                     4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703
+                      0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8
+                       5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                </symbol>
+            </svg>
+            <div class="alert alert-primary alert-dismissible fade show d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="25px" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button>
+                <div class="rus_lang">Сайт на стадии разработки. Пожалуйста, будьте терпеливы.</div>
+                <div class="en_lang">The site is still under development. Please be patient.</div>
+            </div>
+        </div>
+        <!-- TITLE ANIMATION -->
+        <div class="title">
+            <div id="title_container">
+                <div id="message">
+                <a id="animate" href="#"></a>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container-fluid main_container">
+                <div class="row about_me_row ">
+                    <div class="col-1 side_space"></div>
+                    <div class="col-10">
+                        <div>
+                            <div class="row aboutme_container">
+                                <h4 class="rus_lang am_header animation-items" id="scrollspyHeading1">Обо мне</h4>
+                                <h4 class="en_lang am_header animation-items" id="scrollspyHeading5">About me</h4>
+                                <hr>
+                                <div class="col-lg-6 col-md-12 about_me_row_li">
+                                    <div class="row about_me_subrow">
+                                        <div class="col-lg-4 col-md-12 photo_container animation-items"><img src="source/images/photo.png" alt="photo" width="100%"></div>
+                                        <div class="col-lg-8 col-md-12 personal_information ">
+                                            <img id="img_upto_1024" src="source/images/photo.png" alt="photo" width="100%">
+                                            <ul class="personal_information_list">
+                                                <li class="rus_lang pi_text animation-items"><span><b>ФИО:</b> Бакаев Сергей Николаевич</span></li>
+                                                <li class="en_lang pi_text animation-items"><span><b>Full name:</b> Bakaev Sergey Nikolaevich</span></li>
+                                                <li class="rus_lang pi_text animation-items"><span><b>Дата рождения:</b></span> 9.10.1997</li>
+                                                <li class="en_lang pi_text animation-items"><span><b>Date of birth:</b></span> 9 October 1997</li>
+                                                <li class="rus_lang pi_text animation-items"><span><b>Образование:</b> неполное высшее. НИ МГУ им. Н.П. Огарёва, Саранск
+                                                    Экономика, Экономика и управление на предприятии</span></li>
+                                                <li class="en_lang pi_text animation-items"><span><b>Education level:</b> incomplete higher. NI Mordovian State University named after N.P. Ogarev, Saransk.
+                                                    Economic, Economics and Management at the enterprise</span></li>
+                                                <li class="rus_lang pi_text animation-items"><span><b>Опыт работы:</b> Нет</span></li>
+                                                <li class="en_lang pi_text animation-items"><span><b>Work experience:</b> No</span></li>
+                                                <li class="rus_lang pi_text animation-items"><span><b>Инстранные языки | Языки программирования:</b> Английский | Python</span></li>
+                                                <li class="en_lang pi_text animation-items"><span><b>Languages|Programming languages:</b> English|Python</span></li>
+                                                <li class="rus_lang pi_text animation-items"><span><b>Желаемая должность:</b> Junior- Full-stack developer, Data Scientist</span></li>
+                                                <li class="en_lang pi_text animation-items"><span><b>Desired vacancies:</b> Junior- Full-stack developer, Data Scientist</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 more_info_container">
+                                    <span class="rus_lang mi_text animation-items"><p class="mi_text animation-items">Приветствую, мой будущий работодатель!</p> <p class="mi_text ru animation-items">Я новичок в программировании, но очень люблю компьютеры.
+                                        Я начал изучать Python 2 месяца назад и начал с фреймворка PyQt5 потому, что люблю десктопные приложения</p></span>
+                                    <span class="en_lang mi_text animation-items"><p class="mi_text animation-items">Greetings, to my future employer.</p> <p class="mi_text en animation-items">I'm new to programming and really want to connect my life with computers.
+                                        I started learning Python 2 months ago with the PyQt5 framework because I like GUI applications.</p></span>
+                                    <p class="rus_lang mi_text ru animation-items">Помимо "PyQt" в своей разработке мне довелось использовать такие библиотеки как: requests, SQLite, json. Само собой при этом использовал Git.
+                                        Когда я не знаю как решить проблему, я гуглю. Считаю что это умение у меня развито хорошо.</p>
+                                    <p class="en_lang mi_text en animation-items">In addition to "PyQt" in my development, I used libraries such as: requests, SQLite, json. And of course I used Git.
+                                        Whenever I do not know how to solve a problem, I Google it. I believe that this skill is well developed in me.</p>
+                                    <hr>
+                                        <p class="rus_lang wm_header animation-items"><b>Почему я?</b></p>
+                                    <p class="en_lang wm_header animation-items"><b>Why me?</b></p>
+                                    <div class="accordion rus_lang accordion_box animation-items" id="accordionExample">
+                                        <div class="accordion-item rus_lang">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Я ленив.
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Именно благодаря лени я всегда мотивирован упростить задачу,а упростить - значит автоматизировать задачу или сократить код без влияния на эффективность кода.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item rus_lang">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Я схватываю на лету.
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Я быстро приспосабливаюсь к обстановке и легко вхожу в курс дела.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item rus_lang">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Я люблю анализировать все.
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Действия, информацию, процесс, последствия - это объекты моего анализа.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item rus_lang">
+                                            <h2 class="accordion-header" id="headingFour">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    Я нервничаю когда не знаю чего-то.
+                                                </button>
+                                            </h2>
+                                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Когда я сталкиваюсь с задачей, то всегда стараюсь зрить в корень, и если я не понимаю чего-то, то изучаю пока не пойму.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item rus_lang">
+                                            <h2 class="accordion-header" id="headingFive">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                    Я люблю порядок в своей работе.
+                                                </button>
+                                            </h2>
+                                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Когда я работаю то организую свое рабочее пространство, тоже самое я делаю в своих проектах.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion en_lang accordion_box animation-items" id="accordionExample1">
+                                        <div class="accordion-item en_lang">
+                                            <h2 class="accordion-header" id="headingSix">
+                                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                                    I'm lazy.
+                                                </button>
+                                            </h2>
+                                            <div id="collapseSix" class="accordion-collapse collapse show " aria-labelledby="headingSix" data-bs-parent="#accordionExample1">
+                                                <div class="accordion-body ">
+                                                    That's right, thanks to laziness, I am always motivated to simplify my task, and to simplify a task is to automate or shorten the code without violating efficiency.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item en_lang">
+                                            <h2 class="accordion-header " id="headingSeven">
+                                                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                    I catch on to everything.
+                                                </button>
+                                            </h2>
+                                            <div id="collapseSeven" class="accordion-collapse collapse " aria-labelledby="headingSeven" data-bs-parent="#accordionExample1">
+                                                <div class="accordion-body ">
+                                                    I quickly adjust to the environment and easily get up to speed.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item en_lang">
+                                            <h2 class="accordion-header " id="headingEight">
+                                                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                    I like to analyze everything.
+                                                </button>
+                                            </h2>
+                                            <div id="collapseEight" class="accordion-collapse collapse " aria-labelledby="headingEight" data-bs-parent="#accordionExample1">
+                                                <div class="accordion-body ">
+                                                    Action, information, process, consequences, these are my objects for analysis.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item en_lang">
+                                            <h2 class="accordion-header " id="headingNine">
+                                                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                                    I get nervous when I don't know something.
+                                                </button>
+                                            </h2>
+                                            <div id="collapseNine" class="accordion-collapse collapse " aria-labelledby="headingNine" data-bs-parent="#accordionExample1">
+                                                <div class="accordion-body ">
+                                                    When I'm faced with a task, I always try to see beyond the surface, and if I don't understand something, I'll study it until I get to the point of this.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item en_lang">
+                                            <h2 class="accordion-header " id="headingTen">
+                                                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                                    I like order in my work.
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTen" class="accordion-collapse collapse " aria-labelledby="headingTen" data-bs-parent="#accordionExample1">
+                                                <div class="accordion-body ">
+                                                    When I work, I organize my space and do the same in my projects.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 side_space"></div>
+                </div>
+
+                <div class="row my_projects_row">
+                    <div class="col-1 col-md-1"></div>
+                    <div class="col-xl-10 col-lg-12 col-md-10">
+                        <h4 class="rus_lang mp_header animation-items" id="scrollspyHeading2">Мои проекты</h4>
+                        <h4 class="en_lang mp_header animation-items" id="scrollspyHeading6">My Projects</h4>
+                        <hr>
+                        <div class="row myprojects_container">
+                            <div class="col-lg-2 col-md-4 m-4 anno_container animation-items">
+                                <div><a href="project1.html"><img src="source/images/i_badge_0.png" alt="anno_img"></a></div>
+                                <p class="h-5"><a href="project1.html">ANNO-TOOLS</a></p>
+                            </div>
+                            <div class="col-lg-2 col-md-4 m-4 this_website_container animation-items">
+                                <div><a href="project2.html"><img src="source/images/mysite.png" alt="website_img"></a></div>
+                                <p class="h-5"><a href="project2.html">THIS WEBSITE</a></p>
+                            </div>
+                            <div class="col-lg-2 col-md-4 m-4 sqlproj_container animation-items">
+                                <div><a href="#"><img src="source/images/postgresql.png" alt="sqlproject_img"></a></div>
+                                <p class="h-5"><a href="#">SQL PROJECT</a></p>
+                            </div>
+                            <div class="spacer_item"></div>
+                            <div class="col-lg-2 col-md-4 m-4 parser_container animation-items">
+                                <div><a href="#"><img src="source/images/scrapy.png" alt="parser_img"></a></div>
+                                <p class="h-5"><a href="#">PARSER PROJECT</a></p>
+                            </div>
+                            <div class="col-lg-2 col-md-4 m-4 telegrambot_container animation-items">
+                                <div><a href="#"><img src="source/images/telegrambot.png" alt="telegrambot_img"></a></div>
+                                <p class="h-5"><a href="#">TELEGRAM-BOT PROJECT</a></p>
+                            </div>
+                            <div class="col-lg-2 col-md-4 m-4 guianalitics_container animation-items">
+                                <div><a href="#"><img src="source/images/qmlguianalitics.png" alt="analiticsgui_img"></a></div>
+                                <p class="h-5"><a href="#">GUI-QML APP WITH ANALITICS</a></p>
+                            </div>
+                        </div>
+                        <div class="row excuseme_text" style="text-align: center;">
+                            <span class="rus_lang">К сожалению я тороплюсь, поэтому вынужден выкладывать ещё не законченные проекты.</span>
+                            <span class="en_lang">Unfortunately, I'm in a rush, so I have to show my unfinished projects x_x</span>
+                        </div>
+                    </div>
+                    <div class="col-1 col-md-1"></div>
+                </div>
+
+                <div class="row education_row">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <h4 class="rus_lang ep_header animation-items" id="scrollspyHeading3">План обучения | Рабочий процесс</h4>
+                        <h4 class="en_lang ep_header animation-items" id="scrollspyHeading7">Education plan | Workflow</h4>
+                        <hr>
+                        <div class="row education_workflow">
+                            <div class="svgpath_animation">
+                                <svg class="squiggle-animated path" viewBox="0 0 1000 100" id="svg1"  xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path
+                                        class="1000"
+                                        stroke="#000"
+                                        stroke-width="3.0"
+                                        fill="none"
+                                        stroke-dasharray="10.04 10.04"
+                                        stroke-dashoffset="0.00"
+                                        d="M45.869 71.048c6.595 4.785 13.46 9.373 21.008 12.53
+                                        1.724.721 3.506 1.294 5.26 1.94 9.432 3.087 19.31 3.773 29.07 1.948
+                                        2.216-.414 4.388-1.034 6.582-1.551 16.274-5.095 31.914-11.997 47.727-18.339
+                                        18.406-7.57 37.278-13.902 56.206-20.017 10.387-3.193 20.907-6.047 31.658-7.725
+                                            5.665-.884 7.864-.998 13.527-1.52 12.247-1.003 24.538-.533 36.735.794 9.531
+                                            1.054 18.76 3.684 27.857 6.607 6.993 2.484 13.947 5.087 20.696 8.178 1.087.483
+                                            2.177.957 3.26 1.45 3.156 1.436 6.303 2.9 9.34 4.58 3.465 1.917 3.773 2.016
+                                            2.34 1.432 7.494 4.565 15.007 9.13 23.09 12.57 7.081 3.038 14.533 4.876 22.113 6.104
+                                                4.929.577 9.902 1.109 14.873 1.073 3.482-.025 5.174-.27 8.653-.607 8.34-.874
+                                                16.266-3.544 23.813-7.09 6.606-3.19 12.32-7.785 17.62-12.79 4.244-3.937
+                                                7.998-8.342 11.98-12.528a72.483 72.483 0 0 1 12.345-9.915c3.914-2.166 8.03-4.046
+                                                12.35-5.252 3.398-.948 5.283-1.183 8.782-1.792a96.853 96.853 0 0 1
+                                                    25.581-.75c6.822.978 13.538 2.972 19.716 6.029.898.48 1.813.933 2.695
+                                                    1.443.196.113-.81-.392-.633-.252.836.659 1.756 1.202 2.621 1.82
+                                                    2.72 1.94 5.378 3.971 8.066 5.955 6.464 4.438 13.164 8.596 20.192
+                                                    12.086 4.82 2.645 9.919 4.643 15.216 6.077 6.44 1.49 13.05 1.992
+                                                        19.635 2.336 5.421.389 10.77-.586 15.995-1.927 5.786-1.492 11.274-3.83
+                                                        15.887-7.654 2.251-2.384 4.315-5.376 3.737-8.83-.108-.642-.351-1.255-.527-1.884-1.317-3.745-4.006-6.148-7.302-8.147-5.202-3.336-10.946-4.843-16.979-5.679-3.61-.595-7.135-.434-10.563.849-2.851
+                                                        1.531-5.593 3.444-7.076 6.422-.424.852-.706 1.767-1.059 2.65a46.947 46.947 0 0 0-2.26 15.384c.449 4.007
+                                                        2.845 7.055 5.574 9.836 6.227 5.337 13.818 6.815 21.698 7.446 8.533.473 17.051-.584 25.398-2.275 11.141-2.44 21.702-6.806
+                                                            32.083-11.427a335.565 335.565 0 0 1 36.826-14.793c10.541-3.562 21.326-6.188 32.22-8.39 11.937-2.423 24.079-3.48
+                                                            36.217-4.233a217.859 217.859 0 0 1 31.115.052c7.41.711 14.804 1.89 21.997 3.826 2.525.837 5.218 1.295 7.628 2.469.497.242
+                                                            1.98.91 1.433.834-.735-.101-1.352-.61-2.027-.916 2.4 2.49 4.236 5.47 5.667 8.605.97 2.235 1.135 4.641 1.222 7.041-.07
+                                                            3.082-2.059 5.531-3.985 7.76-3.002 3.228-7.018 5.019-10.98 6.754-4.421 1.829-9.018 3.056-13.74 3.756-1.483.077-2.995.163-4.45-.215-.401-.104-1.507-.663-1.169-.424 3.809
+                                                                2.692 2.352 1.269 1.421.198-1.878-4.98 1.83-9.162 5.064-12.53 6.814-6.123 15.627-9.092 24.141-12.01 9.65-3.347 19.502-5.95 29.585-7.555 6.966-.914 14.01-1.383 21.034-1.142
+                                                                6.622.45 12.962 2.516 19.26 4.462 8.236 2.667 16.461 5.377 24.66 8.156 7.346 2.585z"
+                                        />
+                                </svg>
+                            </div>
+                            <div class="col-3 time_mngmt">
+                                <div class="row">
+                                    <div class="col-2 tto"><p class="time_to">8:00</p></div>
+                                    <div class="col-2 arro">
+                                        <div id="arrowAnim">
+                                            <div class="arrowSliding">
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <div class="arrowSliding delay1">
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <div class="arrowSliding delay2">
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <div class="arrowSliding delay3">
+                                                <div class="arrow"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row rus_lang"><p><b>Начни день с чтения документации</b></p><span>Читаю документацию фреймворка с которым работаю</span></div>
+                                <div class="row en_lang"><p><b> Start the day by reading the documentation</b></p><span>I'm reading the documentation of the framework I'm working with</span></div>
+                            </div>
+                            <div class="col-3 time_mngmt">
+                                <div class="row">
+                                    <div class="col-2 tto"><p class="time_to">10:00</p></div>
+                                    <div class="col-2 arro">
+                                        <div id="arrowAnim">
+                                            <div class="arrowSliding">
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <div class="arrowSliding delay1">
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <div class="arrowSliding delay2">
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <div class="arrowSliding delay3">
+                                                <div class="arrow"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row rus_lang"><p><b>Наконе-то попишем</b></p> <span>Продумываю алгоритм работы кода, творю...</span></div>
+                                <div class="row en_lang"><p><b> We'll finally write...</b></p><span>Thinking over the algorithm of the code</span></div>
+                            </div>
+                            <div class="col-3 time_mngmt">
+                                <div class="row">
+                                    <div class="col-2 tto"><p class="time_to">16:00</p></div>
+                                    <div class="col-2 arro">
+                                        <div id="arrowAnim">
+                                            <div class="arrowSliding">
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <div class="arrowSliding delay1">
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <div class="arrowSliding delay2">
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <div class="arrowSliding delay3">
+                                                <div class="arrow"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row rus_lang"><p><b>Не Python<span class="om_word">ом</span> едины</b></p><span>читаю о языках или приёмах с которыми столкнулся во время разработки</span></div>
+                                <div class="row en_lang"><p><b> Not Python united</b></p><span>I read about languages or techniques that I encountered during development</span></div>
+                            </div>
+                            <div class="col-3 time_mngmt">
+                                <div class="row">
+                                    <div class="col-2 tto"><p class="time_to">18:00</p></div>
+                                    <div class="col-2 arro">
+                                        <div id="arrowAnim">
+                                            <div class="arrowSliding">
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <div class="arrowSliding delay1">
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <div class="arrowSliding delay2">
+                                                <div class="arrow"></div>
+                                            </div>
+                                            <div class="arrowSliding delay3">
+                                                <div class="arrow"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row rus_lang"><p><b>Но Python все же роднее</b></p><span>Читаю документацию Python</span></div>
+                                <div class="row en_lang"><p><b>But Python is still more native</b></p><span>Reading Python documentation</span></div>
+                            </div>
+                            <!-- CORUSEL -->
+                            <div class="col-12 col_courusel">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="carousel_item_text">
+                                                <p class="time_to">8:00</p>
+                                                <div class="row rus_lang"><p><b>Начни день с чтения документации</b></p><span>Читаю документацию фреймворка с которым работаю</span></div>
+                                                <div class="row en_lang"><p><b> Start the day by reading the documentation</b></p><span>I'm reading the documentation of the framework I'm working with</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel_item_text">
+                                                <p class="time_to">10:00</p>
+                                                <div class="row rus_lang"><p><b>Наконе-то попишем</b></p> <span>Продумываю алгоритм работы кода, творю...</span></div>
+                                                <div class="row en_lang"><p><b> We'll finally write...</b></p><span>Thinking over the algorithm of the code</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel_item_text">
+                                                <p class="time_to">16:00</p>
+                                                <div class="row rus_lang"><p><b>Не Python<span class="om_word">ом</span> едины</b></p><span>читаю о языках или приёмах с которыми столкнулся во время разработки</span></div>
+                                                <div class="row en_lang"><p><b> Not Python united</b></p><span>I read about languages or techniques that I encountered during development</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel_item_text">
+                                                <p class="time_to">18:00</p>
+                                                <div class="row rus_lang"><p><b>Но Python все же роднее</b></p><span>Читаю документацию Python</span></div>
+                                                <div class="row en_lang"><p><b>But Python is still more native</b></p><span>Reading Python documentation</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+
+                <div class="row contacts_row">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <h4 class="rus_lang c_header animation-items" id="scrollspyHeading4">Контакты</h4>
+                        <h4 class="en_lang c_header animation-items" id="scrollspyHeading8">Contacts</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-2 col-lg-1"></div>
+                            <div class="col-xl-8 col-lg-10 col-xs-12 my_contacts">
+                                <div class="my_contacts_box">
+                                    <ul>
+                                        <li class="rus_lang"><b >Мобильный телефон | WhatsApp:</b> <a href="https://wa.me/79024224565?text=По%20этому%20номеру%20Вы%20можете%20связаться%20со%20мной" data-replace="+79024224565"><span>+79024224565</span></a> </li>
+                                        <li class="en_lang"><b >Mobile phone | WhatsApp:</b> <a href="https://wa.me/79024224565?text=You%20can%20contact%20me%20by%20this%20phone%20number" id="style-1" data-replace="+79024224565"><span>+79024224565</span></a></li>
+                                        <li><b>E-mail:</b> <a href="mailto:myemail554411@gmail.com" id="style-2" data-replace="myemail554411@gmail.com"><span>myemail554411@gmail.com</span></a></li>
+                                        <li><b>Telegram:</b> <a href="https://t.me/Rett_ooo" id="style-3" data-replace="@Rett_ooo"><span>@Rett_ooo</span></a> </li>
+                                        <li class="rus_lang" ><b>Вконтакте:</b><a href="https://vk.com/rett_oo" id="style-4" data-replace="Rett_ooo"><span>Rett_ooo</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container-fluid footer_container">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-1"></div>
+                    <div class=" col-lg-8 col-sm-8">
+                        <span class="rus_lang">Спасибо за посещение!</span>
+                        <span class="en_lang">Thank you for visiting!</span>
+                        <p class="rus_lang">Если вы хотите оставить сообщение или заметили баг, то пожалуйста свяжитесь со мной по контактам указанным выше.</p>
+                        <p class="en_lang">If you want to leave a message or notice a bug, please contact me at the contacts listed above..</p>
+                    </div>
+                    <div class="col-lg-2 col-sm-3 lang_area">
+                        <div class="footer_vertical_line"></div>
+                        <div class="lang_buttons">
+                            <a class="btn btn-primary button rus_lang" href="#" role="button">Английский</a>
+                            <a class="btn btn-primary button en_lang" href="#" role="button">Russian</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="source/scripts/block_animate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="source/scripts/animation_message2.js" ></script>
+    <script src="source/scripts/path.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="source/scripts/language.js"></script>
+    <script src="source/scripts/hmbg_btn.js"></script>
+    <!-- <script src='https://cldup.com/S6Ptkwu_qA.js'></script><script  src="source/bg_animation.js"></script> -->
+</body>
+</html>
