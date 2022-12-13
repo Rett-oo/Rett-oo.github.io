@@ -1,4 +1,4 @@
-/*  */
+/* MAIN PAGE */
 
 @media (max-width: 1750px) {
     .spacer_item {
@@ -12,11 +12,11 @@
         width: 80%;
         height: 80%;
         padding: 7% 3% 7% 3%;
-        margin: 5%;
         font-size: 100%;
     }
-
-
+    .my_contacts_box>ul {
+        width: 100%;
+    }
 }
 @media (max-width: 1400px) {
     .photo_container {
@@ -40,6 +40,9 @@
         padding: 1% 5% 1% 5%;
         width: 160%;
         left: -70px;
+    }
+    .my_contacts_box>ul>li {
+        width: 85%;
     }
 }
 @media (max-width: 992px) {
@@ -72,6 +75,9 @@
         border: 4px solid white;
         border-radius: 550px;
     }
+    .personal_information {
+        text-align: center;
+    }
     .tto {
         margin-top: 7px;
         align-items: center;
@@ -79,6 +85,9 @@
     }
     .time_to {
         margin: auto;
+    }
+    .menu-bg, #menu {
+        display: block;
     }
 }
 @media (max-width: 700px) {
@@ -122,10 +131,50 @@
     .git_logo {
         margin-right: 12px;
     }
-
 }
 @media (max-width: 320px) {
     .alert_container {
         font-size: 80%;
+    }
+}
+
+/* PROJECT PAGE */
+
+@media (max-width: 1200px) {
+    .proj_img_box img {
+        width: 70%;
+    }
+    .force-overflow {
+        font-size: 1vw;
+    }
+    .project_info_box>ul {
+        padding-right: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .proj_img_box {
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 767px) {
+    .after_text {
+        display: none;
+    }
+    .after_text2 {
+        display: block;
+    }
+    .force-overflow {
+        font-size: 1.7vw;
+    }
+    .example_text {
+        text-align: center;
+        margin: auto;
+        padding: 1% 0 1% 0;
+    }
+}
+@media (max-width: 425px) {
+    .force-overflow {
+        font-size: 2vw;
     }
 }
