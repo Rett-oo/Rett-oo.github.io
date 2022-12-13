@@ -180,6 +180,7 @@
     font-weight: bold;
 }
 .menu-bg, #menu {
+    display: none;
     top: 0;
     left: 80%;
     position: absolute;
@@ -395,10 +396,12 @@
     animation: shadow_anim 3s infinite;
 }
 .my_contacts_box>ul {
-    width: 70%;
-    margin:auto;
+    width: 90%;
+    margin: auto;
+
 }
 .my_contacts_box>ul>li {
+    width: 85%;
     margin: auto;
 }
 .my_contacts_box>ul>li a {
@@ -465,6 +468,12 @@
     position: static;
     top: -9999px;
     left: -9999px;
+}
+.btn.btn-primary.button {
+    background-color: #ffffff;
+    color: rgb(33,37,41);
+    margin:  1% 0px 1% 0px;
+    border: none;
 }
 
 @keyframes gradient {
