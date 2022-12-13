@@ -5,16 +5,15 @@ html {
 }
 body {
     overflow-x: hidden;
-    margin: 0;
     background-color: #EDF2FB;
 }
 * {
-    list-style-image: none;
-    list-style-position: outside;
-    list-style-type: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
 }
 a {
     text-decoration: none;
