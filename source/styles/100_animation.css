@@ -133,3 +133,17 @@ canvas {
 .my_contacts_box>ul>li a:hover::after {
     transform: translate3d(0, 0, 0);
 }
+
+/* PROJECT PAGE */
+.proj_img_item._after  {
+    transform: scale(1);
+    opacity: 1;
+}
+.proj_line._after {
+    opacity: 1;
+    width: 15%;
+}
+.project_info_box._after {
+    opacity: 1;
+    transform: scale(1)
+}
