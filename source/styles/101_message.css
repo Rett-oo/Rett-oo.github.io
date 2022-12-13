@@ -31,7 +31,7 @@
   font-size: 20px;
 
 }
-#title_container {
+.title_container  {
   background: linear-gradient(180deg, #EDF2FB 0%, #FFFFFF 100%);
   position: relative;
   text-align: center;
@@ -42,7 +42,7 @@
   font-style: italic;
 
 }
-#title_container:before {
+.title_container:before {
   pointer-events: none;
   position: relative;
   height: 50%;
@@ -53,7 +53,6 @@
   font-weight: 400;
   font-style: italic;
 }
-
 
 @media (max-width: 1000px) {
     #message {
