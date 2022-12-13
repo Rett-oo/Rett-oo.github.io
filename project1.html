@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="source\styles\vs2015.min.css">
     <link rel="stylesheet" href="source/styles/0_default.css">
     <link rel="stylesheet" href="source/styles/1_main_page.css">
-    <link rel="stylesheet" href="static/styles/2_project_page.css">
+    <link rel="stylesheet" href="source/styles/2_project_page.css">
     <link rel="stylesheet" href="source/styles/100_animation.css">
     <link rel="stylesheet" href="source/styles/200_mediarequests.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="source/images/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="source/images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="source/images/icon/favicon-16x16.png">
+    <link rel="manifest" href="source/images/icon/site.webmanifest">
+    <title>Anno 1800 Tool</title>
 </head>
 <body>
     <div class="background">
@@ -33,8 +38,8 @@
                         <div class="top_button_box">
                             <div class="border"></div>
                             <div data-bs-target="#topbar_container" data-bs-smooth-scroll="true" tabindex="2">
-                                <a class="nav-link rus_lang " href="#scrollspyHeading2">Портфолио</a>
-                                <a class="nav-link en_lang" href="#scrollspyHeading6">Portfolio</a>
+                                <a class="nav-link rus_lang " href="index.html#scrollspyHeading2">Портфолио</a>
+                                <a class="nav-link en_lang" href="index.html#scrollspyHeading6">Portfolio</a>
                             </div>
                         </div>
                     </li>
@@ -42,8 +47,8 @@
                         <div class="top_button_box">
                             <div class="border"></div>
                             <div data-bs-target="#topbar_container" data-bs-smooth-scroll="true" tabindex="0">
-                                <a class="nav-link rus_lang" href="#scrollspyHeading1">Обо мне</a>
-                                <a class="nav-link en_lang" href="#scrollspyHeading5">About me</a>
+                                <a class="nav-link rus_lang" href="index.html#scrollspyHeading1">Обо мне</a>
+                                <a class="nav-link en_lang" href="index.html#scrollspyHeading5">About me</a>
                             </div>
                         </div>
                     </li>
@@ -51,8 +56,8 @@
                         <div class="top_button_box">
                             <div class="border"></div>
                             <div data-bs-target="#topbar_container" data-bs-smooth-scroll="true" tabindex="0">
-                                <a class="nav-link rus_lang" href="#scrollspyHeading3">План обучения</a>
-                                <a class="nav-link en_lang" href="#scrollspyHeading7">Education plan</a>
+                                <a class="nav-link rus_lang" href="index.html#scrollspyHeading3">План обучения</a>
+                                <a class="nav-link en_lang" href="index.html#scrollspyHeading7">Education plan</a>
                             </div>
                         </div>
                     </li>
@@ -60,8 +65,8 @@
                         <div class="top_button_box">
                             <div class="border"></div>
                             <div data-bs-target="#topbar_container" data-bs-smooth-scroll="true" tabindex="0">
-                                <a class="nav-link rus_lang" href="#scrollspyHeading4">Контакты</a>
-                                <a class="nav-link en_lang" href="#scrollspyHeading8">Contacts</a>
+                                <a class="nav-link rus_lang" href="index.html#scrollspyHeading4">Контакты</a>
+                                <a class="nav-link en_lang" href="index.html#scrollspyHeading8">Contacts</a>
                             </div>
                         </div>
                     </li>
@@ -110,38 +115,1794 @@
             </div>
         </header>
 
-        <div class="container-fluid">
+        <section class="container-fluid">
             <div class="row 1st">
                 <div class="col-1"></div>
-                <div class="col-10" style="border: 2px solid black">
-                    <div class="row">
-                        <div class="col-6 text-center proj_img_box"><img src="source/images/i_badge_0.png" alt="anno_img"></div>
-                        <div class="col-6">
-                            <ul>
-                                <li><b>Название приложения:</b><span> ANNO 1800 Tools</span></li>
+                <div class=" col-sm-10 col-10">
+                    <div class="row mt-4">
+                        <div class="col-sm-6 col-11  text-center proj_img_box ">
+                            <div class="proj_img_item animation-items"><img src="source/images/i_badge_0.png" alt="anno_img"></div>
+                        </div>
+                        <div class=" col-sm-6 col-11 project_info_box animation-items">
+                            <ul class="rus_lang">
+                                <li><h1> ANNO 1800 Tools</h1></li>
+                                <hr>
                                 <li><b>Функции:</b><span> приложение позволяет расчитывать потребность в производственных
                                         зданиях, имеет библиотеку внутриигровых предметов с их подробным описанием, в
-                                        приложение так же в ближайшее время появится возможность планировать логистические
-                                        цепочки при помощи нод.</span></li>
+                                        приложении так же появится возможность планировать логистические
+                                        цепочки при помощи нод в ближайшее время.</span></li>
                                 <li><b>Используемые библиотеки:</b><span> PyQt5, json, SQLite.</span></li>
                                 <li><b>Версия Python:</b> 3.9</li>
                             </ul>
+                            <ul class="en_lang">
+                                <li><h1> ANNO 1800 Tools</h1></li>
+                                <hr>
+                                <li><b>Functions:</b><span> The application allows you to calculate the need for production buildings, has a library of in-game items with their detailed description. It will also be possible to plan supply chains with the help of nodes in the near future.</span></li>
+                                <li><b>Used libraries:</b><span> PyQt5, json, SQLite.</span></li>
+                                <li><b>Python version:</b> 3.9</li>
+                            </ul>
                         </div>
-
                     </div>
-
                 </div>
                 <div class="col-1"></div>
             </div>
-            <div class="row 2nd">
+            <div class="row mt-4">
                 <div class="col-1"></div>
-                <div class="col-10">
+                <div class="col-10 code_col">
+                    <h2 class="example_text">Example.py</h2>
+                    <div class="row before_code_text ">
+                        <span class="rus_lang">На примере этого приложения Вы можете увидеть как я изучаю язык. Возьмем функцию которая просто заполняет таблицу по заданным условиям:</span>
+                        <span class="en_lang">You can see how I learn a language by using this app as an example. Let's take a function that simply fills the table according to the given conditions:</span>
+                    </div>
+                    <div class="row mt-2 before_code_text2">
+                        <div class="col-md-6 col-12">
+                            <p class="text-center rus_lang">Так выглядит код спустя 2 недели изучения Python: 🤢</p>
+                            <p class="text-center en_lang">This is how my code looks like after two weeks of learning Python: 🤢</p>
+                        </div>
+                        <div class="col-md-6 col-12 after_text">
+                            <p class="text-center rus_lang">А так спустя 1,5 месяца: 😐</p>
+                            <p class="text-center en_lang">After 1.5 months: 😐</p>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6 col-12">
+                            <pre class="pre_box"  id="style-1">
+                                <code class="language-python force-overflow">
+<span>def _createtable(self, region: str) -> QTableWidget:
 
+    valid = QtCore.QRegExp("[0-9 .,]{15}")
+    val = QtGui.QRegExpValidator(valid)
+
+if region == "Old_World":
+    # table data
+    column1 = []
+    column2 = []
+    column3_people = []
+    column3_home = []
+
+    for list_dict in json_table[region]:
+        column1.append(list(list_dict)[0])
+        column2.append(list(list_dict.values())[0][0])
+        column3_people.append(list(list_dict.values())[0][1:])
+
+    for list_dict in json_table2[region]:
+        column3_home.append(list(list_dict.values())[0][1:])
+
+    table = QTableWidget(43, 5)
+    self.table_row_column = {}
+
+    # создание иконок для 3 колонки
+    for i in range(table.rowCount()):
+        for people in json_table[region][-1].values():
+            for people_icon_id in people:
+                pop_label_p = QLabel(self)
+                pop_label_p.move(0, -100)
+                pop_label_p.setAlignment(Qt.AlignRight)
+                pop_label_p.setPixmap(
+                    QPixmap(":" + people_icon_id).scaled(
+                        25, 25, transformMode=Qt.SmoothTransformation))
+                pop_label_p.setObjectName(f"{people_icon_id}")
+
+        for homes in json_table2[region][-1].values():
+            for home_icon_id in homes:
+                pop_label_h = QLabel(self)
+                pop_label_h.move(0, -100)
+                pop_label_h.setAlignment(Qt.AlignRight)
+                pop_label_h.setPixmap(
+                    QPixmap(":" + home_icon_id).scaled(
+                        25, 25, transformMode=Qt.SmoothTransformation))
+                pop_label_h.setObjectName(f"{home_icon_id}")
+
+    for row in range(table.rowCount()):
+        # 1 column
+        column1_frame = QFrame()
+        column1_h_box = QHBoxLayout()
+        column1_h_box.setContentsMargins(0, 0, 0, 0)
+        column1_frame.setLayout(column1_h_box)
+
+        column_pop = column1.pop(0)
+        column1_pb = QPushButton(QIcon(":" + column_pop), '')
+        column1_pb.setMinimumSize(35, 35)
+        column1_pb.setMaximumSize(75, 45)
+        column1_h_box.addWidget(column1_pb)
+
+        table.setCellWidget(row, 0, column1_frame)
+        # 2 column
+        self.column2_text = QTableWidgetItem(column2.pop(0))
+        self.column2_text.setTextAlignment(Qt.AlignCenter)
+        table.setItem(row % 60, 1, self.column2_text)
+        # 3 column
+        column3_frame1 = QFrame()
+        column3_g_box1 = QGridLayout(column3_frame1)
+        column3_frame2 = QFrame()
+        column3_g_box2 = QGridLayout(column3_frame2)
+
+        column3_stacked_w = QStackedWidget()
+        column3_stacked_w.addWidget(column3_frame1)
+        column3_stacked_w.addWidget(column3_frame2)
+        table.setCellWidget(row, 2, column3_stacked_w)
+        # создание словаря для индексации.
+        # Переключение виджета внутри региона -> города.
+        self.table_row_column[row, 2] = column3_stacked_w
+
+        column3_p_value = column3_people.pop(0)
+        column3_h_value = column3_home.pop(0)
+
+        if len(column3_p_value) == 2:
+            if column_pop in ("Fish.webp",
+                                "Schnapps.webp",
+                                "Work_clothes.webp"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "1_Farmers.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "2_Workers.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(QLabel, "1_house_tier01.webp"), 0, 0, 1, 1)  # noqa
+                column3_g_box2.addWidget(
+                    self.findChild(QLabel, "2_house_tier02.webp"), 1, 0, 1, 1)  # noqa
+            elif column_pop in ("Sausages.webp", "Bread.webp",
+                                "Soap.webp", "Beer.webp"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "2_Workers.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "3_Artisans.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(QLabel, "2_house_tier02.webp"), 0, 0, 1, 1)  # noqa
+                column3_g_box2.addWidget(
+                    self.findChild(QLabel, "3_house_tier03.webp"), 1, 0, 1, 1)  # noqa
+            elif column_pop in ("Canned_food.webp",
+                                "Sewing_machines.webp",
+                                "Fur_Coats.webp", "Rum.webp",
+                                "Advanced_rum_roaster.png"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "3_Artisans.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "4_Engineers.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(QLabel, "3_house_tier03.webp"), 0, 0, 1, 1)  # noqa
+                column3_g_box2.addWidget(
+                    self.findChild(QLabel, "4_house_tier04.webp"), 1, 0, 1, 1)  # noqa
+            elif column_pop in ("Glasses.webp",
+                                "High_wheeler.webp",
+                                "Pocket_watch.webp",
+                                "Light_bulb.webp", "Coffee.webp",
+                                "Advanced_coffee_roaster.png",
+                                "Chewing_Gum.webp",
+                                "Typewriters.webp",
+                                "Violins.webp"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "4_Engineers.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "5_Investors.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(QLabel, "4_house_tier04.webp"), 0, 0, 1, 1)  # noqa
+                column3_g_box2.addWidget(
+                    self.findChild(QLabel, "5_house_tier05.webp"), 1, 0, 1, 1)  # noqa
+            elif column_pop in ("Champagne.webp", "Jewelry.webp",
+                                "Gramophone.webp",
+                                "Steam_carriages.webp",
+                                "Cigars.webp", "Chocolate.webp",
+                                "Biscuits.webp", "Cognac.webp",
+                                "Billiard_Tables.webp",
+                                "Toys.webp"):
+                if column_pop == "Jewelry.webp":
+                    column3_g_box1.addWidget(
+                        QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                    column3_g_box1.addWidget(
+                        QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                    column3_g_box2.addWidget(
+                        QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                    column3_g_box2.addWidget(
+                        QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                    column3_g_box1.addWidget(
+                        self.findChild(
+                            QLabel, "5_Investors.webp"), 0, 0, 1, 1)
+                    column3_g_box1.addWidget(
+                        self.findChild(
+                            QLabel, "7_Tourists.webp"), 1, 0, 1, 1)
+                    column3_g_box2.addWidget(
+                        self.findChild(
+                            QLabel, "5_house_tier05.webp"), 0, 0, 1, 1)
+                    column3_g_box2.addWidget(
+                        self.findChild(
+                            QLabel, "7_house_tier7.png"), 1, 0, 1, 1)
+                else:
+                    column3_g_box1.addWidget(
+                        QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                    column3_g_box1.addWidget(
+                        QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                    column3_g_box2.addWidget(
+                        QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                    column3_g_box2.addWidget(
+                        QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                    column3_g_box1.addWidget(
+                        self.findChild(
+                            QLabel, "5_Investors.webp"), 0, 0, 1, 1)
+                    column3_g_box1.addWidget(
+                        self.findChild(
+                            QLabel, "6_Icon_resident_scholars_0.webp"), 1, 0, 1, 1)  # noqa
+                    column3_g_box2.addWidget(
+                        self.findChild(
+                            QLabel, "5_house_tier05.webp"), 0, 0, 1, 1)
+                    column3_g_box2.addWidget(
+                        self.findChild(
+                            QLabel, "6_house_tier6.png"), 1, 0, 1, 1)
+            elif column_pop in ("Bowler_hats.webp",
+                                "Icon_hibiscus_tea_0.webp",
+                                "Icon_tapestries_0.webp",
+                                "Icon_wat_stew_0.webp",
+                                "Icon_tobacco_pipes_0.webp",
+                                "Icon_leather_shoes_0.webp",
+                                "Icon_suits_0.webp",
+                                "Icon_telephones_0.webp"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "6_Icon_resident_scholars_0.webp"), 0, 0, 1, 1)  # noqa
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "5_Investors.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "6_house_tier6.png"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "5_house_tier05.webp"), 1, 0, 1, 1)
+            else:
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "7_Tourists.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "7_Tourists.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(QLabel, "7_house_tier7.png"), 0, 0, 1, 1)  # noqa
+                column3_g_box2.addWidget(
+                    self.findChild(QLabel, "7_house_tier7.png"), 1, 0, 1, 1)  # noqa
+
+        elif len(column3_p_value) == 3:
+            if column_pop == "Bread.webp":
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "2_Workers.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "3_Artisans.webp"), 1, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "7_Tourists.webp"), 2, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "2_house_tier02.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "3_house_tier03.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "7_house_tier7.png"), 2, 0, 1, 1)
+            elif column_pop == "Canned_food.webp":
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "3_Artisans.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "4_Engineers.webp"), 1, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "6_Icon_resident_scholars_0.webp"), 2, 0, 1, 1)  # noqa
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "3_house_tier03.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "4_house_tier04.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "6_house_tier6.png"), 2, 0, 1, 1)
+            elif column_pop == "Fur_Coats.webp":
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "3_Artisans.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "4_Engineers.webp"), 1, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "7_Tourists.webp"), 2, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "3_house_tier03.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "4_house_tier04.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "7_house_tier7.png"), 2, 0, 1, 1)
+            elif column_pop in ("Rum.webp", "Advanced_rum_roaster.png"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "3_Artisans.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "4_Engineers.webp"), 1, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "6_Icon_resident_scholars_0.webp"), 2, 0, 1, 1)  # noqa
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "3_house_tier03.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "4_house_tier04.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "7_house_tier7.png"), 2, 0, 1, 1)
+
+        else:
+            if column_pop in ("Champagne.webp", "Jewelry.webp",
+                                "Gramophone.webp",
+                                "Steam_carriages.webp",
+                                "Cigars.webp", "Chocolate.webp",
+                                "Biscuits.webp", "Cognac.webp",
+                                "Billiard_Tables.webp",
+                                "Toys.webp"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "5_Investors.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(QLabel, "5_house_tier05.webp"), 0, 0, 1, 1)  # noqa
+
+            elif column_pop in ("Bowler_hats.webp",
+                                "Icon_hibiscus_tea_0.webp",
+                                "Icon_tapestries_0.webp",
+                                "Icon_wat_stew_0.webp",
+                                "Icon_tobacco_pipes_0.webp",
+                                "Icon_leather_shoes_0.webp",
+                                "Icon_suits_0.webp",
+                                "Icon_telephones_0.webp"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "6_Icon_resident_scholars_0.webp"), 0, 0, 1, 1)  # noqa
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "6_house_tier6.png"), 0, 0, 1, 1)
+
+            else:
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "7_Tourists.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(QLabel, "7_house_tier7.png"), 0, 0, 1, 1)  # noqa
+
+        # 4 column
+        column4_frame = QFrame()
+        column4_h_box = QHBoxLayout()
+        column4_frame.setLayout(column4_h_box)
+        table.setCellWidget(row, 3, column4_frame)
+
+        self.column4_le = QLineEdit("100")
+        self.column4_le.setValidator(val)
+        self.column4_le.setMaxLength(4)
+        self.column4_le.setAlignment(Qt.AlignCenter)
+        self.column4_le.setMinimumSize(50, 20)
+        self.column4_le.setMaximumSize(100, 25)
+        self.column4_le.setStyleSheet("background-color: #ced2bc; \
+                            font: 12px;border-radius: 3px; \
+                            font-style: Heuretica")
+        column4_la = QLabel()
+        column4_la.setAlignment(Qt.AlignCenter)
+        column4_la.setMaximumSize(30, 25)
+        column4_la.setPixmap(
+            QPixmap(":free-icon-percent-4688859.png").scaled(
+                15, 15, transformMode=Qt.SmoothTransformation))
+        column4_h_box.addWidget(self.column4_le)
+        column4_h_box.addWidget(column4_la)
+
+        # 5 column
+        column5_frame = QFrame()
+        column5_h_box = QHBoxLayout()
+        column5_frame.setLayout(column5_h_box)
+
+        self.column5_la = QLabel("0")
+        self.column5_la.setAlignment(Qt.AlignCenter)
+        self.column5_la.setStyleSheet("font-size: 12px")
+        column5_h_box.addWidget(self.column5_la)
+        table.setCellWidget(row, 4, column5_frame)
+        ##############
+        self.column4_le.textChanged.connect(self.onTextChanged)
+        self.column4_le.textChanged.connect(
+            lambda text=self.column4_le.text(),
+            col5=self.column5_la,
+            col2=self.column2_text.text():
+                self.action1(text, col5, col2))
+
+elif region == "New_World":
+
+    column1 = []
+    column2 = []
+    column3_people = []
+    column3_home = []
+
+    for list_dict in json_table[region]:
+        column1.append(list(list_dict)[0])
+        column2.append(list(list_dict.values())[0][0])
+        column3_people.append(list(list_dict.values())[0][1:])
+
+    for list_dict in json_table2[region]:
+        column3_home.append(list(list_dict.values())[0][1:])
+
+    table = QTableWidget(15, 5)
+    self.table_row_column = {}
+
+    # создание иконок для 3 колонки
+    for i in range(table.rowCount()):
+        for people in json_table[region][-1].values():
+            for people_icon_id in people:
+                pop_label_p = QLabel(self)
+                pop_label_p.move(0, -100)
+                pop_label_p.setAlignment(Qt.AlignRight)
+                pop_label_p.setPixmap(
+                    QPixmap(":" + people_icon_id).scaled(
+                        25, 25, transformMode=Qt.SmoothTransformation))
+                pop_label_p.setObjectName(f"{people_icon_id}")
+
+        for homes in json_table2[region][-1].values():
+            for home_icon_id in homes:
+                pop_label_h = QLabel(self)
+                pop_label_h.move(0, -100)
+                pop_label_h.setAlignment(Qt.AlignRight)
+                pop_label_h.setPixmap(
+                    QPixmap(":" + home_icon_id).scaled(
+                        25, 25, transformMode=Qt.SmoothTransformation))
+                pop_label_h.setObjectName(f"{home_icon_id}")
+
+    for row in range(table.rowCount()):
+        # 1 column
+        column1_frame = QFrame()
+        column1_h_box = QHBoxLayout()
+        column1_h_box.setContentsMargins(0, 0, 0, 0)
+        column1_frame.setLayout(column1_h_box)
+
+        column_pop = column1.pop(0)
+        column1_pb = QPushButton(QIcon(":" + column_pop), '')
+        column1_pb.setMinimumSize(35, 35)
+        column1_pb.setMaximumSize(35, 35)
+        column1_h_box.addWidget(column1_pb)
+
+        table.setCellWidget(row, 0, column1_frame)
+
+        # 2 column
+        column2_text = QTableWidgetItem(column2.pop(0))
+        column2_text.setTextAlignment(Qt.AlignCenter)
+        table.setItem(row % 60, 1, column2_text)
+
+        # 3 column
+        column3_frame1 = QFrame()
+        column3_g_box1 = QGridLayout(column3_frame1)
+        column3_frame2 = QFrame()
+        column3_g_box2 = QGridLayout(column3_frame2)
+
+        column3_stacked_w = QStackedWidget()
+        column3_stacked_w.addWidget(column3_frame1)
+        column3_stacked_w.addWidget(column3_frame2)
+        table.setCellWidget(row, 2, column3_stacked_w)
+
+        self.table_row_column[row, 2] = column3_stacked_w
+
+        column3_p_value = column3_people.pop(0)
+        column3_h_value = column3_home.pop(0)
+
+        if len(column3_p_value) == 2:
+            if column_pop in ("Tortilla.webp",
+                                "Coffee.webp",
+                                "Advanced_coffee_roaster.png",
+                                "Beer.webp", "Beer_Hacienda.png",
+                                "Sewing_machines.webp", "Bowler_hats.webp",
+                                "Cigars.webp"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "9_Obreros.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "9_Obreros.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "9_ObreroResidence.png"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "11_Hacienda_Obrera_Quarters.webp"), 1, 0, 1, 1)  # noqa
+            else:
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "8_Jornaleros.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "9_Obreros.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "10_Hacienda_Jornalero_Quarters.webp"), 0, 0, 1, 1)  # noqa
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "11_Hacienda_Obrera_Quarters.webp"), 1, 0, 1, 1)  # noqa
+        elif len(column3_p_value) == 4:
+            column3_g_box1.addWidget(
+                QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+            column3_g_box1.addWidget(
+                QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+            column3_g_box1.addWidget(
+                QLabel(column3_p_value.pop(0)), 2, 1, 1, 1)
+            column3_g_box1.addWidget(
+                QLabel(column3_p_value.pop(0)), 3, 1, 1, 1)
+            column3_g_box2.addWidget(
+                QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+            column3_g_box2.addWidget(
+                QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+            column3_g_box2.addWidget(
+                QLabel(column3_h_value.pop(0)), 2, 1, 1, 1)
+            column3_g_box2.addWidget(
+                QLabel(column3_h_value.pop(0)), 3, 1, 1, 1)
+            column3_g_box1.addWidget(
+                self.findChild(
+                    QLabel, "8_Jornaleros.webp"), 0, 0, 1, 1)
+            column3_g_box1.addWidget(
+                self.findChild(
+                    QLabel, "9_Obreros.webp"), 1, 0, 1, 1)
+            column3_g_box1.addWidget(
+                self.findChild(
+                    QLabel, "8_Jornaleros.webp"), 2, 0, 1, 1)
+            column3_g_box1.addWidget(
+                self.findChild(
+                    QLabel, "9_Obreros.webp"), 3, 0, 1, 1)
+            column3_g_box2.addWidget(
+                self.findChild(
+                    QLabel, "8_JornaleroResidence.png"), 0, 0, 1, 1)
+            column3_g_box2.addWidget(
+                self.findChild(
+                    QLabel, "9_ObreroResidence.png"), 1, 0, 1, 1)
+            column3_g_box2.addWidget(
+                self.findChild(
+                    QLabel, "10_Hacienda_Jornalero_Quarters.webp"), 2, 0, 1, 1)  # noqa
+            column3_g_box2.addWidget(
+                self.findChild(
+                    QLabel, "11_Hacienda_Obrera_Quarters.webp"), 3, 0, 1, 1)  # noqa
+        else:
+            if column_pop == "Schnapps_Hacienda.png":
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "8_Jornaleros.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "10_Hacienda_Jornalero_Quarters.webp"), 0, 0, 1, 1)  # noqa
+            else:
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "9_Obreros.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(QLabel, "11_Hacienda_Obrera_Quarters.webp"), 0, 0, 1, 1)
+
+        # 4 column
+        column4_frame = QFrame()
+        column4_h_box = QHBoxLayout()
+        column4_frame.setLayout(column4_h_box)
+        table.setCellWidget(row, 3, column4_frame)
+
+        self.column4_le = QLineEdit("100")
+        self.column4_le.setValidator(val)
+        self.column4_le.setMaxLength(4)
+        self.column4_le.setAlignment(Qt.AlignCenter)
+        self.column4_le.setMinimumSize(50, 20)
+        self.column4_le.setMaximumSize(100, 25)
+        self.column4_le.setStyleSheet("background-color: #ced2bc; \
+                            font: 12px; font-style: Heuretica")
+        column4_la = QLabel()
+        column4_la.setAlignment(Qt.AlignCenter)
+        column4_la.setMaximumSize(30, 25)
+        column4_la.setPixmap(
+            QPixmap(":free-icon-percent-4688859.png").scaled(
+                15, 15, transformMode=Qt.SmoothTransformation))
+        column4_h_box.addWidget(self.column4_le)
+        column4_h_box.addWidget(column4_la)
+
+        # 5 column
+        column5_frame = QFrame()
+        column5_h_box = QHBoxLayout()
+        column5_frame.setLayout(column5_h_box)
+
+        self.column5_la = QLabel("0")
+        self.column5_la.setAlignment(Qt.AlignCenter)
+        self.column5_la.setStyleSheet("color: black; font-size: 12px")
+        column5_h_box.addWidget(self.column5_la)
+        table.setCellWidget(row, 4, column5_frame)
+
+        self.column4_le.textChanged.connect(
+            lambda text=self.column4_le.text(),
+            col5=self.column5_la,
+            col2=column2_text.text():
+                self.action1(text, col5, col2))
+
+elif region == "Cape_Trelawney":
+
+    column1 = []
+    column2 = []
+    column3_people = []
+    column3_home = []
+
+    for list_dict in json_table[region]:
+        column1.append(list(list_dict)[0])
+        column2.append(list(list_dict.values())[0][0])
+        column3_people.append(list(list_dict.values())[0][1:])
+
+    for list_dict in json_table2[region]:
+        column3_home.append(list(list_dict.values())[0][1:])
+
+    table = QTableWidget(43, 5)
+    self.table_row_column = {}
+
+    # создание иконок для 3 колонки
+    for i in range(table.rowCount()):
+        for people in json_table[region][-1].values():
+            for people_icon_id in people:
+                pop_label_p = QLabel(self)
+                pop_label_p.move(0, -100)
+                pop_label_p.setAlignment(Qt.AlignRight)
+                pop_label_p.setPixmap(
+                    QPixmap(":" + people_icon_id).scaled(
+                        25, 25, transformMode=Qt.SmoothTransformation))
+                pop_label_p.setObjectName(f"{people_icon_id}")
+
+        for homes in json_table2[region][-1].values():
+            for home_icon_id in homes:
+                pop_label_h = QLabel(self)
+                pop_label_h.move(0, -100)
+                pop_label_h.setAlignment(Qt.AlignRight)
+                pop_label_h.setPixmap(
+                    QPixmap(":" + home_icon_id).scaled(
+                        25, 25, transformMode=Qt.SmoothTransformation))
+                pop_label_h.setObjectName(f"{home_icon_id}")
+
+    for row in range(table.rowCount()):
+        # 1 column
+        column1_frame = QFrame()
+        column1_h_box = QHBoxLayout()
+        column1_h_box.setContentsMargins(0, 0, 0, 0)
+        column1_frame.setLayout(column1_h_box)
+
+        column_pop = column1.pop(0)
+        column1_pb = QPushButton(QIcon(":" + column_pop), '')
+        column1_pb.setMinimumSize(35, 35)
+        column1_pb.setMaximumSize(35, 35)
+        column1_h_box.addWidget(column1_pb)
+        table.setCellWidget(row, 0, column1_frame)
+
+        # 2 column
+        column2_text = QTableWidgetItem(column2.pop(0))
+        column2_text.setTextAlignment(Qt.AlignCenter)
+        table.setItem(row % 60, 1, column2_text)
+
+        # 3 column
+        column3_frame1 = QFrame()
+        column3_g_box1 = QGridLayout(column3_frame1)
+        column3_frame2 = QFrame()
+        column3_g_box2 = QGridLayout(column3_frame2)
+
+        column3_stacked_w = QStackedWidget()
+        column3_stacked_w.addWidget(column3_frame1)
+        column3_stacked_w.addWidget(column3_frame2)
+        table.setCellWidget(row, 2, column3_stacked_w)
+
+        self.table_row_column[row, 2] = column3_stacked_w
+
+        column3_p_value = column3_people.pop(0)
+        column3_h_value = column3_home.pop(0)
+
+        if len(column3_p_value) == 2:
+            if column_pop in ("Fish.webp",
+                                "Schnapps.webp",
+                                "Work_clothes.webp"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "1_Farmers.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "2_Workers.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "1_house_tier01.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "2_house_tier02.webp"), 1, 0, 1, 1)
+            elif column_pop in ("Sausages.webp", "Bread.webp",
+                                "Soap.webp", "Beer.webp"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "2_Workers.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "3_Artisans.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "2_house_tier02.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "3_house_tier03.webp"), 1, 0, 1, 1)
+            elif column_pop in ("Canned_food.webp",
+                                "Sewing_machines.webp",
+                                "Fur_Coats.webp", "Rum.webp",
+                                "Advanced_rum_roaster.png"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "3_Artisans.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "4_Engineers.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "3_house_tier03.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "4_house_tier04.webp"), 1, 0, 1, 1)
+            elif column_pop in ("Glasses.webp",
+                                "High_wheeler.webp",
+                                "Pocket_watch.webp",
+                                "Light_bulb.webp", "Coffee.webp",
+                                "Advanced_coffee_roaster.png",
+                                "Chewing_Gum.webp",
+                                "Typewriters.webp",
+                                "Violins.webp"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "4_Engineers.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "5_Investors.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "4_house_tier04.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "5_house_tier05.webp"), 1, 0, 1, 1)
+            elif column_pop in ("Champagne.webp", "Jewelry.webp",
+                                "Gramophone.webp",
+                                "Steam_carriages.webp",
+                                "Cigars.webp", "Chocolate.webp",
+                                "Biscuits.webp", "Cognac.webp",
+                                "Billiard_Tables.webp",
+                                "Toys.webp"):
+                if column_pop == "Jewelry.webp":
+                    column3_g_box1.addWidget(
+                        QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                    column3_g_box1.addWidget(
+                        QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                    column3_g_box2.addWidget(
+                        QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                    column3_g_box2.addWidget(
+                        QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                    column3_g_box1.addWidget(
+                        self.findChild(
+                            QLabel, "5_Investors.webp"), 0, 0, 1, 1)
+                    column3_g_box1.addWidget(
+                        self.findChild(
+                            QLabel, "7_Tourists.webp"), 1, 0, 1, 1)
+                    column3_g_box2.addWidget(
+                        self.findChild(
+                            QLabel, "5_house_tier05.webp"), 0, 0, 1, 1)
+                    column3_g_box2.addWidget(
+                        self.findChild(
+                            QLabel, "7_house_tier7.png"), 1, 0, 1, 1)
+                else:
+                    column3_g_box1.addWidget(
+                        QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                    column3_g_box1.addWidget(
+                        QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                    column3_g_box2.addWidget(
+                        QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                    column3_g_box2.addWidget(
+                        QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                    column3_g_box1.addWidget(
+                        self.findChild(
+                            QLabel, "5_Investors.webp"), 0, 0, 1, 1)
+                    column3_g_box1.addWidget(
+                        self.findChild(
+                            QLabel, "6_Icon_resident_scholars_0.webp"), 1, 0, 1, 1)  # noqa
+                    column3_g_box2.addWidget(
+                        self.findChild(
+                            QLabel, "5_house_tier05.webp"), 0, 0, 1, 1)
+                    column3_g_box2.addWidget(
+                        self.findChild(
+                            QLabel, "6_house_tier6.png"), 1, 0, 1, 1)
+            elif column_pop in ("Bowler_hats.webp",
+                                "Icon_hibiscus_tea_0.webp",
+                                "Icon_tapestries_0.webp",
+                                "Icon_wat_stew_0.webp",
+                                "Icon_tobacco_pipes_0.webp",
+                                "Icon_leather_shoes_0.webp",
+                                "Icon_suits_0.webp",
+                                "Icon_telephones_0.webp"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "6_Icon_resident_scholars_0.webp"), 0, 0, 1, 1)  # noqa
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "5_Investors.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "6_house_tier6.png"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "5_house_tier05.webp"), 1, 0, 1, 1)
+            else:
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "7_Tourists.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "7_Tourists.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "7_house_tier7.png"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "7_house_tier7.png"), 1, 0, 1, 1)
+
+        elif len(column3_p_value) == 3:
+            if column_pop == "Bread.webp":
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "2_Workers.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "3_Artisans.webp"), 1, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "7_Tourists.webp"), 2, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "2_house_tier02.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "3_house_tier03.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "7_house_tier7.png"), 2, 0, 1, 1)
+            elif column_pop == "Canned_food.webp":
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "3_Artisans.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "4_Engineers.webp"), 1, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "6_Icon_resident_scholars_0.webp"), 2, 0, 1, 1)  # noqa
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "3_house_tier03.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "4_house_tier04.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "6_house_tier6.png"), 2, 0, 1, 1)
+            elif column_pop == "Fur_Coats.webp":
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "3_Artisans.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "4_Engineers.webp"), 1, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "7_Tourists.webp"), 2, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "3_house_tier03.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "4_house_tier04.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "7_house_tier7.png"), 2, 0, 1, 1)
+            elif column_pop in ("Rum.webp",
+                                "Advanced_rum_roaster.png"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 2, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "3_Artisans.webp"), 0, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "4_Engineers.webp"), 1, 0, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "6_Icon_resident_scholars_0.webp"), 2, 0, 1, 1)  # noqa
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "3_house_tier03.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "4_house_tier04.webp"), 1, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "7_house_tier7.png"), 2, 0, 1, 1)
+
+        else:
+
+            if column_pop in ("Champagne.webp", "Jewelry.webp",
+                                "Gramophone.webp",
+                                "Steam_carriages.webp",
+                                "Cigars.webp", "Chocolate.webp",
+                                "Biscuits.webp", "Cognac.webp",
+                                "Billiard_Tables.webp",
+                                "Toys.webp"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "5_Investors.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(QLabel, "5_house_tier05.webp"), 0, 0, 1, 1)  # noqa
+
+            elif column_pop in ("Bowler_hats.webp",
+                                "Icon_hibiscus_tea_0.webp",
+                                "Icon_tapestries_0.webp",
+                                "Icon_wat_stew_0.webp",
+                                "Icon_tobacco_pipes_0.webp",
+                                "Icon_leather_shoes_0.webp",
+                                "Icon_suits_0.webp",
+                                "Icon_telephones_0.webp"):
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(
+                        QLabel, "6_Icon_resident_scholars_0.webp"), 0, 0, 1, 1)  # noqa
+                column3_g_box2.addWidget(
+                    self.findChild(
+                        QLabel, "6_house_tier6.png"), 0, 0, 1, 1)
+
+            else:
+                column3_g_box1.addWidget(
+                    QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box2.addWidget(
+                    QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+                column3_g_box1.addWidget(
+                    self.findChild(QLabel, "7_Tourists.webp"), 0, 0, 1, 1)
+                column3_g_box2.addWidget(
+                    self.findChild(QLabel, "7_house_tier7.png"), 0, 0, 1, 1)  # noqa
+
+        # 4 column
+        column4_frame = QFrame()
+        column4_h_box = QHBoxLayout()
+        column4_frame.setLayout(column4_h_box)
+        table.setCellWidget(row, 3, column4_frame)
+
+        self.column4_le = QLineEdit("100")
+        self.column4_le.setValidator(val)
+        self.column4_le.setMaxLength(4)
+        self.column4_le.setAlignment(Qt.AlignCenter)
+        self.column4_le.setMinimumSize(50, 20)
+        self.column4_le.setMaximumSize(100, 25)
+        self.column4_le.setStyleSheet("background-color: #ced2bc; \
+                            font: 12px; font-style: Heuretica")
+        column4_la = QLabel()
+        column4_la.setAlignment(Qt.AlignCenter)
+        column4_la.setMaximumSize(30, 25)
+        column4_la.setPixmap(
+            QPixmap(":free-icon-percent-4688859.png").scaled(
+                15, 15, transformMode=Qt.SmoothTransformation))
+        column4_h_box.addWidget(self.column4_le)
+        column4_h_box.addWidget(column4_la)
+
+        # 5 column
+        column5_frame = QFrame()
+        column5_h_box = QHBoxLayout()
+        column5_frame.setLayout(column5_h_box)
+
+        self.column5_la = QLabel("0")
+        self.column5_la.setAlignment(Qt.AlignCenter)
+        self.column5_la.setStyleSheet("color: black; font-size: 12px")
+        column5_h_box.addWidget(self.column5_la)
+        table.setCellWidget(row, 4, column5_frame)
+
+        self.column4_le.textChanged.connect(
+            lambda text=self.column4_le.text(),
+            col5=self.column5_la,
+            col2=column2_text.text():
+                self.action1(text, col5, col2))
+
+elif region == "The_Arctic":
+
+    column1 = []
+    column2 = []
+    column3_people = []
+    column3_home = []
+
+    for list_dict in json_table[region]:
+        column1.append(list(list_dict)[0])
+        column2.append(list(list_dict.values())[0][0])
+        column3_people.append(list(list_dict.values())[0][1:])
+
+    for list_dict in json_table2[region]:
+        column3_home.append(list(list_dict.values())[0][1:])
+
+    table = QTableWidget(9, 5)
+    self.table_row_column = {}
+
+    # создание иконок для 3 колонки
+    for i in range(table.rowCount()):
+        for people in json_table[region][-1].values():
+            for people_icon_id in people:
+                pop_label_p = QLabel(self)
+                pop_label_p.move(0, -100)
+                pop_label_p.setAlignment(Qt.AlignRight)
+                pop_label_p.setPixmap(
+                    QPixmap(":" + people_icon_id).scaled(
+                        25, 25, transformMode=Qt.SmoothTransformation))
+                pop_label_p.setObjectName(f"{people_icon_id}")
+
+        for homes in json_table2[region][-1].values():
+            for home_icon_id in homes:
+                pop_label_h = QLabel(self)
+                pop_label_h.move(0, -100)
+                pop_label_h.setAlignment(Qt.AlignRight)
+                pop_label_h.setPixmap(
+                    QPixmap(":" + home_icon_id).scaled(
+                        25, 25, transformMode=Qt.SmoothTransformation))
+                pop_label_h.setObjectName(f"{home_icon_id}")
+
+    for row in range(table.rowCount()):
+        # 1 column
+        column1_frame = QFrame()
+        column1_h_box = QHBoxLayout()
+        column1_h_box.setContentsMargins(0, 0, 0, 0)
+        column1_frame.setLayout(column1_h_box)
+
+        column_pop = column1.pop(0)
+        column1_pb = QPushButton(QIcon(":" + column_pop), '')
+        column1_pb.setMinimumSize(35, 35)
+        column1_pb.setMaximumSize(35, 35)
+        column1_h_box.addWidget(column1_pb)
+
+        table.setCellWidget(row, 0, column1_frame)
+        # 2 column
+        column2_text = QTableWidgetItem(column2.pop(0))
+        column2_text.setTextAlignment(Qt.AlignCenter)
+        table.setItem(row % 60, 1, column2_text)
+        # 3 column
+        column3_frame1 = QFrame()
+        column3_g_box1 = QGridLayout(column3_frame1)
+        column3_frame2 = QFrame()
+        column3_g_box2 = QGridLayout(column3_frame2)
+
+        column3_stacked_w = QStackedWidget()
+        column3_stacked_w.addWidget(column3_frame1)
+        column3_stacked_w.addWidget(column3_frame2)
+        table.setCellWidget(row, 2, column3_stacked_w)
+
+        self.table_row_column[row, 2] = column3_stacked_w
+
+        column3_p_value = column3_people.pop(0)
+        column3_h_value = column3_home.pop(0)
+
+        if len(column3_p_value) == 2:
+            column3_g_box1.addWidget(
+                QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+            column3_g_box1.addWidget(
+                QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+            column3_g_box2.addWidget(
+                QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+            column3_g_box2.addWidget(
+                QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+            column3_g_box1.addWidget(
+                self.findChild(
+                    QLabel, "10_Explorers.webp"), 0, 0, 1, 1)
+            column3_g_box1.addWidget(
+                self.findChild(
+                    QLabel, "11_Technicians.webp"), 1, 0, 1, 1)
+            column3_g_box2.addWidget(
+                self.findChild(
+                    QLabel, "Icon_research_resource_0.webp"), 0, 0, 1, 1)
+            column3_g_box2.addWidget(
+                self.findChild(
+                    QLabel, "Icon_research_resource_0.webp"), 1, 0, 1, 1)
+
+        else:
+            column3_g_box1.addWidget(
+                QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+            column3_g_box2.addWidget(
+                QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+            column3_g_box1.addWidget(
+                self.findChild(QLabel, "11_Technicians.webp"), 0, 0, 1, 1)
+            column3_g_box2.addWidget(
+                self.findChild(QLabel, "Icon_research_resource_0.webp"), 0, 0, 1, 1)  # noqa
+
+        # 4 column
+        column4_frame = QFrame()
+        column4_h_box = QHBoxLayout()
+        column4_frame.setLayout(column4_h_box)
+        table.setCellWidget(row, 3, column4_frame)
+
+        self.column4_le = QLineEdit("100")
+        self.column4_le.setValidator(val)
+        self.column4_le.setMaxLength(4)
+        self.column4_le.setAlignment(Qt.AlignCenter)
+        self.column4_le.setMinimumSize(50, 20)
+        self.column4_le.setMaximumSize(100, 25)
+        self.column4_le.setStyleSheet("background-color: #ced2bc; \
+                            font: 12px; font-style: Heuretica")
+        column4_la = QLabel()
+        column4_la.setAlignment(Qt.AlignCenter)
+        column4_la.setMaximumSize(30, 25)
+        column4_la.setPixmap(
+            QPixmap(":free-icon-percent-4688859.png").scaled(
+                15, 15, transformMode=Qt.SmoothTransformation))
+        column4_h_box.addWidget(self.column4_le)
+        column4_h_box.addWidget(column4_la)
+        # 5 column
+        column5_frame = QFrame()
+        column5_h_box = QHBoxLayout()
+        column5_frame.setLayout(column5_h_box)
+
+        self.column5_la = QLabel("0")
+        self.column5_la.setAlignment(Qt.AlignCenter)
+        self.column5_la.setStyleSheet("font-size: 12px")
+        column5_h_box.addWidget(self.column5_la)
+        table.setCellWidget(row, 4, column5_frame)
+
+        self.column4_le.textChanged.connect(
+            lambda text=self.column4_le.text(),
+            col5=self.column5_la,
+            col2=column2_text.text():
+                self.action1(text, col5, col2))
+
+elif region == "Enbesa":
+
+    column1 = []
+    column2 = []
+    column3_people = []
+    column3_home = []
+
+    for list_dict in json_table[region]:
+        column1.append(list(list_dict)[0])
+        column2.append(list(list_dict.values())[0][0])
+        column3_people.append(list(list_dict.values())[0][1:])
+
+    for list_dict in json_table2[region]:
+        column3_home.append(list(list_dict.values())[0][1:])
+
+    table = QTableWidget(11, 5)
+    self.table_row_column = {}
+
+    # создание иконок для 3 колонки
+    for i in range(table.rowCount()):
+        for people in json_table[region][-1].values():
+            for people_icon_id in people:
+                pop_label_p = QLabel(self)
+                pop_label_p.move(0, -100)
+                # pop_label_p.setAlignment(Qt.AlignRight)
+                pop_label_p.setPixmap(
+                    QPixmap(":" + people_icon_id).scaled(
+                        25, 25, transformMode=Qt.SmoothTransformation))
+                pop_label_p.setObjectName(f"{people_icon_id}")
+
+        for homes in json_table2[region][-1].values():
+            for home_icon_id in homes:
+                pop_label_h = QLabel(self)
+                pop_label_h.move(0, -100)
+                # pop_label_h.setAlignment(Qt.AlignRight)
+                pop_label_h.setPixmap(
+                    QPixmap(":" + home_icon_id).scaled(
+                        25, 25, transformMode=Qt.SmoothTransformation))
+                pop_label_h.setObjectName(f"{home_icon_id}")
+
+    for row in range(table.rowCount()):
+        # 1 column
+        column1_frame = QFrame()
+        column1_h_box = QHBoxLayout()
+        column1_h_box.setContentsMargins(0, 0, 0, 0)
+        column1_frame.setLayout(column1_h_box)
+
+        column_pop = column1.pop(0)
+        column1_pb = QPushButton(QIcon(":" + column_pop), '')
+        column1_pb.setMinimumSize(35, 35)
+        column1_pb.setMaximumSize(35, 35)
+        column1_h_box.addWidget(column1_pb)
+        table.setCellWidget(row, 0, column1_frame)
+
+        # 2 column
+        column2_text = QTableWidgetItem(column2.pop(0))
+        column2_text.setTextAlignment(Qt.AlignCenter)
+        table.setItem(row % 60, 1, column2_text)
+
+        # 3 column
+        column3_frame1 = QFrame()
+        column3_g_box1 = QGridLayout(column3_frame1)
+        column3_frame2 = QFrame()
+        column3_g_box2 = QGridLayout(column3_frame2)
+
+        column3_stacked_w = QStackedWidget()
+        column3_stacked_w.addWidget(column3_frame1)
+        column3_stacked_w.addWidget(column3_frame2)
+        table.setCellWidget(row, 2, column3_stacked_w)
+
+        self.table_row_column[row, 2] = column3_stacked_w
+
+        column3_p_value = column3_people.pop(0)
+        column3_h_value = column3_home.pop(0)
+
+        if len(column3_p_value) == 2:
+            column3_g_box1.addWidget(
+                QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+            column3_g_box1.addWidget(
+                QLabel(column3_p_value.pop(0)), 1, 1, 1, 1)
+            column3_g_box2.addWidget(
+                QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+            column3_g_box2.addWidget(
+                QLabel(column3_h_value.pop(0)), 1, 1, 1, 1)
+            column3_g_box1.addWidget(
+                self.findChild(QLabel, "12_Icon_resident_sheperd_0.webp"),
+                0, 0, 1, 1)
+            column3_g_box1.addWidget(
+                self.findChild(QLabel, "13_Icon_resident_elder_0.webp"),
+                1, 0, 1, 1)
+            column3_g_box2.addWidget(
+                self.findChild(QLabel, "Icon_research_resource_0.webp"),
+                0, 0, 1, 1)
+            column3_g_box2.addWidget(
+                self.findChild(QLabel, "Icon_research_resource_0.webp"),
+                1, 0, 1, 1)
+
+        else:
+            column3_g_box1.addWidget(
+                QLabel(column3_p_value.pop(0)), 0, 1, 1, 1)
+            column3_g_box2.addWidget(
+                QLabel(column3_h_value.pop(0)), 0, 1, 1, 1)
+            column3_g_box1.addWidget(
+                self.findChild(
+                    QLabel, "13_Icon_resident_elder_0.webp"), 0, 0, 1, 1)
+            column3_g_box2.addWidget(
+                self.findChild(
+                    QLabel, "Icon_research_resource_0.webp"), 0, 0, 1, 1)
+
+        # 4 column
+        column4_frame = QFrame()
+        column4_h_box = QHBoxLayout()
+        column4_frame.setLayout(column4_h_box)
+        table.setCellWidget(row, 3, column4_frame)
+
+        self.column4_le = QLineEdit("100")
+        self.column4_le.setValidator(val)
+        self.column4_le.setMaxLength(4)
+        self.column4_le.setAlignment(Qt.AlignCenter)
+        self.column4_le.setMinimumSize(50, 20)
+        self.column4_le.setMaximumSize(100, 25)
+        self.column4_le.setStyleSheet("background-color: #ced2bc; \
+                            font: 12px; font-style: Heuretica")
+        column4_la = QLabel()
+        column4_la.setAlignment(Qt.AlignCenter)
+        column4_la.setMaximumSize(30, 25)
+        column4_la.setPixmap(
+            QPixmap(":free-icon-percent-4688859.png").scaled(
+                15, 15, transformMode=Qt.SmoothTransformation))
+        column4_h_box.addWidget(self.column4_le)
+        column4_h_box.addWidget(column4_la)
+
+        # 5 column
+        column5_frame = QFrame()
+        column5_h_box = QHBoxLayout()
+        column5_frame.setLayout(column5_h_box)
+
+        self.column5_la = QLabel("0")
+        self.column5_la.setAlignment(Qt.AlignCenter)
+        self.column5_la.setStyleSheet("font-size: 12px")
+        column5_h_box.addWidget(self.column5_la)
+        table.setCellWidget(row, 4, column5_frame)
+
+        self.column4_le.textChanged.connect(
+            lambda text=self.column4_le.text(),
+            col5=self.column5_la,
+            col2=column2_text.text():
+                self.action1(text, col5, col2))
+    # Стиль таблицы
+    delegate = HighlightDelegate(table)
+    table.setItemDelegate(delegate)
+
+    sizePolicy = QtWidgets.QSizePolicy(
+        QtWidgets.QSizePolicy.Expanding,
+        QtWidgets.QSizePolicy.Expanding)
+    sizePolicy.setHorizontalStretch(0)
+    sizePolicy.setVerticalPolicy(0)
+    sizePolicy.setHeightForWidth(table.sizePolicy().hasHeightForWidth())
+    table.setSizePolicy(sizePolicy)
+    table.setMinimumSize(QSize(400, 300))
+    table.setMaximumSize(QSize(2000, 1000))
+    table.setSizeIncrement(QSize(0, 0))
+    table.setLayoutDirection(Qt.LeftToRight)
+    table.setFrameShadow(QtWidgets.QFrame.Raised)
+    table.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+    table.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+    table.setShowGrid(False)
+    table.verticalHeader().setVisible(False)
+    table.setSelectionMode(QAbstractItemView.NoSelection)
+    table.setEditTriggers(QAbstractItemView.NoEditTriggers)
+    table.setFocusPolicy(Qt.NoFocus)
+    table.setObjectName("Table")
+    table.setHorizontalHeaderLabels([
+        'Product', 'Base output',
+        'Base\nconsumption',
+        'Productivity',
+        'Buildings\nRequired'
+    ])
+    table.horizontalHeader().setSectionResizeMode(
+        QtWidgets.QHeaderView.Stretch)
+    table.verticalHeader().setSectionResizeMode(
+        QtWidgets.QHeaderView.ResizeToContents)
+    return table</span>
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="col-md-6 col-12 after_text2">
+                            <p class="text-center rus_lang">А так спустя 1,5 месяца: 😐</p>
+                            <p class="text-center en_lang">After 1.5 months: 😐</p>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <pre class="pre_box" id="style-1">
+                                <code class="language-python force-overflow">
+<span>with open("resources\\tab1_consumpion\\consumption_data_p.json") as p:
+    json_table = json.load(p)
+with open("resources\\tab1_consumpion\\consumption_data_h.json") as h:
+    json_table2 = json.load(h)
+
+
+def _createtable(self, region: str) -> QTableWidget:
+
+    valid = QRegExp("[0-9 .,]{15}")
+    val = QRegExpValidator(valid)
+
+    # self.column1 - products list
+    # self.column2 - products base output list
+    # self.column3_people/column3_home - consumer: consumption dict list list
+    self.column1 = []
+    self.column2 = []
+    self.column3_people = []
+    self.column3_home = []
+
+    def createtable_info(region):
+        """Retrieve data from json."""
+        for list_dict in json_table[region]:
+            self.column1.append(list(list_dict)[0])
+            self.column2.append(list(list_dict.values())[0][0])
+            self.column3_people.append(list(list_dict.values())[0][1:])
+
+        for list_dict in json_table2[region]:
+            self.column3_home.append(list(list_dict.values())[0][1:])
+    createtable_info(region)
+
+    if region == "Old_World":
+        table = QTableWidget(len(self.column1) - 1, 5)
+        self.table_row_column = {}
+    elif region == "New_World":
+        table = QTableWidget(len(self.column1) - 1, 5)
+        self.table_row_column = {}
+    elif region == "Cape_Trelawney":
+        table = QTableWidget(len(self.column1) - 1, 5)
+        self.table_row_column = {}
+    elif region == "The_Arctic":
+        table = QTableWidget(len(self.column1) - 1, 5)
+        self.table_row_column = {}
+    elif region == "Enbesa":
+        table = QTableWidget(len(self.column1) - 1, 5)
+        self.table_row_column = {}
+
+    def completetable():
+
+        for row in range(table.rowCount()):
+            # 1 column
+            column1_frame = QFrame()
+            column1_h_box = QHBoxLayout()
+            column1_frame.setLayout(column1_h_box)
+
+            column1_pb = PushButton_G(self.column1[row])
+            column1_pb.setMinimumSize(35, 35)
+            column1_pb.setMaximumSize(55, 45)
+            column1_h_box.addWidget(column1_pb)
+            table.setCellWidget(row, 0, column1_frame)
+
+            # 2 column
+            self.column2_text = QTableWidgetItem(self.column2[row])
+            self.column2_text.setTextAlignment(Qt.AlignCenter)
+            table.setItem(row, 1, self.column2_text)
+
+            # 3 column
+            def complete_3column() -> QStackedWidget:
+                column3_stacked_w = QStackedWidget()
+                frame = QFrame()
+                frame.setStyleSheet("border: 2px solid red;")
+                fbox1 = QFormLayout(frame)
+                fbox1.setVerticalSpacing(15)
+                fbox1.setFieldGrowthPolicy(fbox1.FieldsStayAtSizeHint)
+                fbox1.setRowWrapPolicy(fbox1.DontWrapRows)
+                #########
+                fbox1.setFormAlignment(Qt.AlignCenter)
+                fbox1.setLabelAlignment(Qt.AlignVCenter)
+                ##########
+                frame2 = QFrame()
+                fbox2 = QFormLayout(frame2)
+                column3_stacked_w.addWidget(frame)
+                column3_stacked_w.addWidget(frame2)
+                fbox2.setFieldGrowthPolicy(fbox2.FieldsStayAtSizeHint)
+                fbox2.setRowWrapPolicy(fbox2.DontWrapRows)
+
+                # creating a dictionary for indexing
+                # Toggle widget inside region's st.widget -> city st.widget
+                self.table_row_column[row, 2] = column3_stacked_w
+
+                def distribute_population(tp_list):
+                    # column3_people[row] - consumers count
+                    for i in tp_list[row]:
+                        icon_label = QLabel()
+                        icon_label.setObjectName(f"{i}")
+                        icon_label.setMinimumSize(25, 30)
+                        icon_label.setStyleSheet("border: 2px solid black")
+                        icon_pixmap = QPixmap(
+                            ":" + list(tp_list[row]
+                                        [tp_list[row].index(i)].keys())
+                            [0]).scaled(25, 25,
+                                        transformMode=Qt.SmoothTransformation)
+                        icon_label.setPixmap(icon_pixmap)
+                        text_label = QLabel(list(
+                            tp_list[row][tp_list[row].index(i)].values())[0])
+                        #####################
+                        text_label.setMinimumSize(55, 30)
+                        #####################
+                        if tp_list == self.column3_people:
+                            fbox1.addRow(icon_label, text_label)  # noqa
+                        else:
+                            fbox2.addRow(icon_label, text_label)  # noqa
+
+                distribute_population(self.column3_people)
+                distribute_population(self.column3_home)
+
+                return column3_stacked_w
+
+            table.setCellWidget(row, 2, complete_3column())
+
+            # 4 column
+            column4_frame = QFrame()
+            column4_h_box = QHBoxLayout()
+            column4_frame.setLayout(column4_h_box)
+            table.setCellWidget(row, 3, column4_frame)
+
+            self.column4_le = QLineEdit("100")
+            self.column4_le.setValidator(val)
+            self.column4_le.setMaxLength(4)
+            self.column4_le.setAlignment(Qt.AlignCenter)
+            self.column4_le.setMinimumSize(50, 20)
+            self.column4_le.setMaximumSize(100, 25)
+
+            column4_la = QLabel()
+            column4_la.setAlignment(Qt.AlignCenter)
+            column4_la.setMaximumSize(30, 25)
+            column4_la.setPixmap(
+                QPixmap(":free-icon-percent-4688859.png").scaled(
+                    15, 15, transformMode=Qt.SmoothTransformation))
+            column4_h_box.addWidget(self.column4_le)
+            column4_h_box.addWidget(column4_la)
+
+            # 5 column
+            column5_frame = QFrame()
+            column5_h_box = QHBoxLayout()
+            column5_frame.setLayout(column5_h_box)
+
+            self.column5_la = QLabel("0")
+            self.column5_la.setAlignment(Qt.AlignCenter)
+            column5_h_box.addWidget(self.column5_la)
+            table.setCellWidget(row, 4, column5_frame)
+            ##############
+            self.column4_le.textChanged.connect(self.onTextChanged)
+            self.column4_le.textChanged.connect(
+                lambda text=self.column4_le.text(),
+                col5=self.column5_la,
+                col2=self.column2_text.text():
+                    self.action1(text, col5, col2))
+
+        completetable()
+
+        # Table style
+        delegate = HighlightDelegate(table)
+        table.setItemDelegate(delegate)
+
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Expanding,
+            QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalPolicy(0)
+        sizePolicy.setHeightForWidth(table.sizePolicy().hasHeightForWidth())
+        table.setSizePolicy(sizePolicy)
+        table.setMinimumSize(QSize(400, 300))
+        table.setMaximumSize(QSize(2000, 1000))
+        table.setFrameShadow(QtWidgets.QFrame.Raised)
+        table.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        table.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        table.setShowGrid(False)
+        table.verticalHeader().setVisible(False)
+        table.setSelectionMode(QAbstractItemView.NoSelection)
+        table.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        table.setFocusPolicy(Qt.NoFocus)
+        table.setHorizontalHeaderLabels([
+            'Product', 'Base\noutput',
+            'Base\nconsumption',
+            'Productivity',
+            'Buildings\nRequired'
+        ])
+        table.horizontalHeader().setSectionResizeMode(
+            QtWidgets.QHeaderView.Stretch)
+        if region == "The_Arctic" or "Enbesa":
+            table.verticalHeader().setSectionResizeMode(
+                QtWidgets.QHeaderView.Stretch)
+            table.verticalHeader().setMinimumSectionSize(75)
+        else:
+            table.verticalHeader().setSectionResizeMode(
+                QtWidgets.QHeaderView.ResizeToContents)
+
+        table.setStyleSheet("""font-size: 16px; font-family: Heuristica""")
+        return table
+
+                                    </span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="row after_code_text text-center">
+                        <span class="rus_lang">Я всегда стремлюсь сократить код, ведь так удобнее с ним работать и поддерживать в дальнейшем. <p>Просмотреть репозиторий с этим проектом Вы можете по <a href="https://github.com/Rett-oo/Anno1800Tool">этой</a> ссылке </p> </span>
+                        <span class="en_lang">I always try to keep the code short, because it makes it easier to work with and maintain in the future. You can view the repository with this project at <a href="https://github.com/Rett-oo/Anno1800Tool">this link</a> </p> </span>
+                    </div>
                 </div>
                 <div class="col-1"></div>
             </div>
-        </div>
-        <footer>
+        </section>
+
+        <footer class="mt-4 text-center">
             <div class="container-fluid footer_container">
                 <div class="row">
                     <div class="col-lg-2 col-sm-1"></div>
@@ -149,9 +1910,8 @@
                         <span class="rus_lang">Спасибо за посещение!</span>
                         <span class="en_lang">Thank you for visiting!</span>
                         <p class="rus_lang">Если вы хотите оставить сообщение или заметили баг, то пожалуйста свяжитесь
-                            со мной по контактам указанным выше.</p>
-                        <p class="en_lang">If you want to leave a message or notice a bug, please contact me at the
-                            contacts listed above..</p>
+                            со мной <a href="index.html#scrollspyHeading8" class="animate_link">этим</a> контактам.</p>
+                        <p class="en_lang">If you want to leave a message or notice a bug, please contact me at <a href="index.html#scrollspyHeading8" class="animate_link">these</a> contacts.</p>
                     </div>
                     <div class="col-lg-2 col-sm-3 lang_area">
                         <div class="footer_vertical_line"></div>
@@ -166,12 +1926,13 @@
     </div>
     <script src="source/scripts/block_animate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+    <script src="source/scripts/hmbg_btn.js"></script>
+    <script src="source/scripts/highlight.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="source/scripts/path.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script src="source/scripts/language.js"></script>
-    <script src="source/scripts/hmbg_btn.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
