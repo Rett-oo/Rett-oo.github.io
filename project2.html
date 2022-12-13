@@ -116,9 +116,9 @@
         </header>
 
         <section class="container-fluid">
-            <div class="row 1st">
+            <div class="row">
                 <div class="col-1"></div>
-                <div class=" col-sm-10 col-10">
+                <div class="col-sm-10 col-10">
                     <div class="row mt-4">
                         <div class="col-sm-6 col-11  text-center proj_img_box ">
                             <div class="proj_img_item animation-items"><img src="source/images/mysite.png" alt="mysite_img"></div>
@@ -146,34 +146,724 @@
             <div class="row mt-4">
                 <div class="col-1"></div>
                 <div class="col-10 code_col">
-                    <h2 class="example_text">Example.py</h2>
-                    <div class="row before_code_text ">
-                        <span class="rus_lang">На примере этого приложения Вы можете увидеть как я изучаю язык. Возьмем функцию которая просто заполняет таблицу по заданным условиям:</span>
-                        <span class="en_lang">You can see how I learn a language by using this app as an example. Let's take a function that simply fills the table according to the given conditions:</span>
+                    <div class="row before_code_text mt-2">
+                        <span class="rus_lang">Этот проект не отличается чем-то особенным, поскольку HTML мне показался крайне простым, как и CSS. Тем более интернет и так переполнен вспомогательными инструментами для верстки сайта. Однако на примере этого проекта я хотел показать, что я не боюсь изучать что-то помимо Python и как уже говорил, я неплох в поиске информации. 🙃  </span>
+                        <span class="en_lang"> This project isn't anything special, because I found HTML to be extremely simple, as well as CSS. Moreover, the Internet is already full of auxiliary tools for the layout of the site. However, with this project I wanted to show that I'm not afraid to learn something other than Python and, as I said before, I'm not bad at finding information. 🙃</span>
                     </div>
                     <div class="row mt-2 before_code_text2">
-                        <div class="col-md-6 col-12">
-                            <p class="text-center rus_lang">Так выглядит код спустя 2 недели изучения Python: 🤢</p>
-                            <p class="text-center en_lang">This is how my code looks like after two weeks of learning Python: 🤢</p>
-                        </div>
-                        <div class="col-md-6 col-12 after_text">
-                            <p class="text-center rus_lang">А так спустя 1,5 месяца: 😐</p>
-                            <p class="text-center en_lang">After 1.5 months: 😐</p>
+                        <div class="col-md-12 col-12">
+                            <p class="text-center rus_lang">Показывать код, думаю, смысла нет, Вы и так его легко можете посмотреть. Я покажу то, как я люблю порядок в своих проектах.</p>
+                            <p class="text-center en_lang">I think there is no point in showing the code, you can easily see it anyway. I'll better show you how I like order in my projects.</p>
                         </div>
                     </div>
                     <div class="row mt-2">
                         <div class="col-md-6 col-12">
-                            <pre class="pre_box"  id="style-1">
-                                <code class="language-python force-overflow">
-                                    <span>
-                                    </span>
+                            <h2 class="example_text mb-2">Terminal output</h2>
+                            <pre class="pre_box2"  id="style-1">
+                                <code class="force-overflow">
+D:.
+│   .gitignore
+│   index.html
+│   project1.html
+│   project2.html
+│   README.md
+│
+├───.vscode
+│       tasks.json
+│
+└───source
+    │   map.json
+    │
+    ├───images
+    │   │
+    │   ├...
+    │   │
+    │   └───icon
+    │        ...
+    │
+    ├───scripts
+    │       animation_htitle.js
+    │       animation_intoscrn.js
+    │       animation_particles.js
+    │       animation_svg_path.js
+    │       change_language.js
+    │       highlight.min.js
+    │       hmbrgr_menu_btn.js
+    │
+    └───styles
+            0_default.css
+            100_animation.css
+            101_message.css
+            102_arrow.css
+            1_main_page.css
+            200_mediarequests.css
+            2_project_page.css
+            vs2015.min.css
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <h2 class="example_text mb-2">Style.css</h2>
+                            <pre class="pre_box2"  id="style-1">
+                                <code class="force-overflow">
+/* Properties structure */
+/*  BOX PROPERTIES
+        SIZE
+        PADDING|MARGIN
+        POSITION
+        BACKGROUND|BORDER
+        ...
+        TEXT PROPERTIES
+*/
+
+/* HEADER */
+.header_container {
+    display: flex;
+    box-sizing: inherit;
+    max-width: 1600px;
+    height: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgb(233, 237, 255);
+    box-shadow: 0px 1px 5px rgba(171, 196, 255, .4);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 0.1em solid #afb9cf;
+    -webkit-text-size-adjust: 100%;
+}
+.header_logo {
+    display: grid;
+    grid-template-rows: 16px 16px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 6px 10px 10px;
+    height: 100%;
+    margin-top: 1px;
+    width: 137px;
+    float: left;
+    outline-offset: -2px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color:rgb(51, 54, 61);
+}
+#my {
+    grid-column: 1;
+    grid-row: 1 / 2;
+    margin-top: -11px;
+    font-size: 37px;
+    text-align: right;
+}
+#website {...}
+#portfolio {...}
+
+/* top buttons */
+.topbar_container {
+    display: block;
+    box-sizing: inherit;
+    height: 100%;
+    padding-left: 2px;
+    padding-right: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 1 1 auto;
+    overflow-x: visible;
+    float: left;
+    -webkit-box-flex: 1;
+}
+.nav-pills {...}
+.nav-item {...}
+...
+
+/* HMBRG MENU */
+#menu {...}
+#menu-bar {...}
+...
+.menu-bg {
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 200px;
+    z-index: 1;
+    background: radial-gradient(circle, #E2EAFC, #ffffff);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+etc.
                                 </code>
                             </pre>
                         </div>
                     </div>
+                    <div class="row my-2 text-center json_row">
+                        <span class="rus_lang">А ещё люблю делать карту своего проекта. Пока получается не очень, но я определённо над этим ещё поработаю. Вот эта карта например отражает все созданные файлы проекта и селекторы.</span>
+                        <span class="en_lang">I also like to make a map of my project. It's not very good so far, but I'll definitely work on it. This map, for example, shows all created project files and selectors.</span>
+                    <div class="row my-2 ">
+                        <h2>Dict.json</h2>
+                            <pre class="pre_box2_1"  id="style-1">
+<code class="force-overflow">
+{
+    "html" : [
+        "index.html",
+        "project1.html",
+        "project2.html"
+    ],
+    "css" : [
+        {"0_defalut.css" : [
+            "html",
+            "body",
+            "*",
+            "a"
+        ]},
+        {"100_animation.css": [
+            {"PARTICALS": [
+                "canvas",
+                "#particles-js",
+                ".text"
+            ]},
+            {"hmbrgr menu animation": [
+                ".change",
+                ".change .bar",
+                ".change #bar1",
+                ".change #bar2",
+                ".change #bar3",
+                ".change-bg"
+            ]},
+            {"INTO SCREEN ANIMATION": [
+                {"ABOUT": [
+                    ".am_header._after",
+                    ".photo_container._after",
+                    ".pi_text._after",
+                    ".mi_text._after",
+                    ".wm_header._after",
+                    ".accordion_box._after",
+                    ".mp_header._after"
+                ]},
+                {"PROJECTS": [
+                    ".anno_container._after",
+                    ".this_website_container._after",
+                    ".sqlproj_container._after",
+                    ".parser_container._after",
+                    ".telegrambot_container._after",
+                    ".guianalitics_container._after"
+                ]},
+                {"WORKFLOW": [
+                    ".ep_header._after"
+                ]},
+                {"CONTACTS": [
+                    ".c_header._after"
+            ]}]},
+            {"ANIMATION CONTACTS LINK": [
+                ".my_contacts_box>ul>li a:hover::before",
+                ".my_contacts_box>ul>li a:hover span",
+                ".my_contacts_box>ul>li a::after",
+                ".my_contacts_box>ul>li a::after",
+                ".my_contacts_box>ul>li a:hover::after"
+
+            ]},
+            {"PROJECT PAGE": [
+                ".proj_img_item._after",
+                ".proj_line._after",
+                ".project_info_box._after"
+            ]}]},
+        {"1_main_page.css": [
+            {"HEADER" : [
+                ".header_container",
+                ".header_logo",
+                "#my",
+                "#website",
+                "#portfolio",
+                {"top buttons": [
+                    ".topbar_container",
+                    ".nav-pills",
+                    ".nav-item",
+                    ".top_button_box",
+                    ".border",
+                    ".nav-link",
+                    ".top_button_item:hover",
+                    ".git_logo>a>img",
+                    ".git_logo>a>img:hover"
+                ]},
+                {"HMBRG MENU": [
+                    "#menu",
+                    "#menu-bar",
+                    ".bar",
+                    "#bar1",
+                    "#bar3",
+                    ".nav_hmbrg",
+                    ".nav_hmbrg ul",
+                    ".nav_hmbrg li",
+                    ".nav_hmbrg li a",
+                    ".nav_hmbrg li a:hover",
+                    ".menu-bg, #menu",
+                    ".menu-bg"
+                ]}
+            ]},
+            {"alert": [
+                ".alert_container",
+                ".alert-primary",
+                ".btn-close",
+                ".alert-dismissible .btn-close"
+            ]},
+            {"101_message.css" : [
+                ".ghost,",
+                ".glitch",
+                "#message",
+                "#message p",
+                "#animate",
+                ".title",
+                "#title_container",
+                "#title_container:before"
+            ]},
+            {"SECTION": [
+                {"ABOUT": [
+                    ".am_header",
+                    ".about_me_row",
+                    ".about_me_row_li",
+                    ".photo_container",
+                    ".photo_container>img",
+                    "#img_upto_1024",
+                    ".personal_information, .more_info_container",
+                    ".personal_information",
+                    ".pi_text",
+                    ".mi_text",
+                    ".mi_text.ru",
+                    ".wm_header",
+                    ".accordion_box"
+                ]},
+                {"MY PROJECTS" : [
+                    ".my_projects_row",
+                    ".mp_header",
+                    ".myprojects_container",
+                    ".myprojects_container>.col-lg-2",
+                    ".myprojects_container>.col-lg-2 img",
+                    ".anno_container,.this_website_container, .sqlproj_container, .parser_container, .telegrambot_container, .guianalitics_container",
+                    ".spacer_item",
+                    ".h-5 a",
+                    ".anno_container",
+                    ".this_website_container",
+                    ".sqlproj_container",
+                    ".parser_container",
+                    ".telegrambot_container",
+                    ".guianalitics_container",
+                    ".myprojects_container>.col-2 img",
+                    ".sqlproj_container img, .parser_container img, .telegrambot_container img, .guianalitics_container img",
+                    ".telegrambot_container img",
+                    ".excuseme_text"
+                ]},
+                {"WORKFLOW": [
+                    ".ep_header",
+                    ".col_courusel",
+                    ".carousel-inner",
+                    ".time_mngmt",
+                    ".tto",
+                    ".time_to",
+                    ".om_word",
+                    {"102_arrow.css": [
+                        "#arrowAnim",
+                        ".arro",
+                        ".arrow",
+                        ".arrowSliding",
+                        ".delay1",
+                        ".delay2",
+                        ".delay3"
+                    ]}
+                ]},
+                {"CONTACTS": [
+                    ".c_header",
+                    ".my_contacts",
+                    ".my_contacts_box",
+                    ".my_contacts_box>ul",
+                    ".my_contacts_box>ul>li",
+                    ".my_contacts_box>ul>li a",
+                    ".my_contacts_box>ul>li a::before",
+                    ".my_contacts_box>ul>li a::before",
+                    ".my_contacts_box>ul>li a span"
+                ]}
+            ]},
+            {"FOOTER": [
+                ".footer_container",
+                ".lang_area",
+                ".footer_vertical_line",
+                {"switch_lang_btns": [
+                    ".rus_lang",
+                    ".lang_buttons",
+                    ".lang_buttons .button",
+                    ".lang_buttons .rus_lang",
+                    ".btn.btn-primary.button"
+                ]}
+            ]}]},
+        {"2_project_page.css": [
+            ".proj_img_box",
+            ".proj_img_box img",
+            ".proj_img_item",
+            ".project_info_box",
+            ".code_col",
+            ".example_text",
+            ".before_code_text",
+            ".before_code_text2",
+            ".after_text2",
+            ".pre_box",
+            ".force-overflow"
+        ]},
+        {"mediarequests.css": [
+            {"max-width: 1750px": [
+                ".spacer_item",
+                ".myprojects_container>.col-lg-2",
+                ".my_contacts_box",
+                ".my_contacts_box>ul"
+            ]},
+            {"max-width: 1400px": [
+                ".photo_container",
+                "#img_upto_1024",
+                ".about_me_row",
+                ".personal_information_list",
+                ".my_contacts_box>ul>li"
+            ]},
+            {"max-width: 992px": [
+                ".top_button_box",
+                "#menu",
+                ".alert_container",
+                ".more_info_container",
+                ".personal_information_list",
+                "#img_upto_1024",
+                ".tto",
+                ".time_to",
+                ".personal_information"
+            ]},
+            {"max-width: 700px": [
+                ".menu-bg, #menu",
+                ".col_courusel",
+                ".time_mngmt",
+                ".carousel_item_text",
+                ".time_to",
+                ".myprojects_container",
+                ".my_contacts_box>ul"
+            ]},
+            {"max-width: 500px": [
+                ".personal_information_list",
+                ".myprojects_container",
+                ".my_contacts_box",
+                ".menu-bg, #menu",
+                ".git_logo"
+            ]},
+            {"max-width: 320px": [
+                ".alert_container"
+            ]},
+            {"Project page": [
+                {"max-width: 1200px": [
+                    ".proj_img_box img",
+                    ".force-overflow",
+                    ".project_info_box>ul",
+                    ".proj_img_box"
+                ]},
+                {"max-width: 576px": [
+                    ".proj_img_box"
+                ]},
+                {"max-width: 767px": [
+                    ".after_text",
+                    ".after_text2",
+                    ".force-overflow",
+                    ".example_text"
+                ]},
+                {"max-width: 425px": [
+                    ".force-overflow"
+                ]}
+            ]}
+        ]}
+        ],
+    "js": [
+        "animation_message2.js",
+        "bg_animation.js",
+        "block_animate.js",
+        "hmbg_btn.js",
+        "language.js",
+        "path.js"
+    ]
+}{
+    "html" : [
+        "index.html",
+        "project1.html",
+        "project2.html"
+    ],
+    "css" : [
+        {"0_defalut.css" : [
+            "html",
+            "body",
+            "*",
+            "a"
+        ]},
+        {"100_animation.css": [
+            {"PARTICALS": [
+                "canvas",
+                "#particles-js",
+                ".text"
+            ]},
+            {"hmbrgr menu animation": [
+                ".change",
+                ".change .bar",
+                ".change #bar1",
+                ".change #bar2",
+                ".change #bar3",
+                ".change-bg"
+            ]},
+            {"INTO SCREEN ANIMATION": [
+                {"ABOUT": [
+                    ".am_header._after",
+                    ".photo_container._after",
+                    ".pi_text._after",
+                    ".mi_text._after",
+                    ".wm_header._after",
+                    ".accordion_box._after",
+                    ".mp_header._after"
+                ]},
+                {"PROJECTS": [
+                    ".anno_container._after",
+                    ".this_website_container._after",
+                    ".sqlproj_container._after",
+                    ".parser_container._after",
+                    ".telegrambot_container._after",
+                    ".guianalitics_container._after"
+                ]},
+                {"WORKFLOW": [
+                    ".ep_header._after"
+                ]},
+                {"CONTACTS": [
+                    ".c_header._after"
+            ]}]},
+            {"ANIMATION CONTACTS LINK": [
+                ".my_contacts_box>ul>li a:hover::before",
+                ".my_contacts_box>ul>li a:hover span",
+                ".my_contacts_box>ul>li a::after",
+                ".my_contacts_box>ul>li a::after",
+                ".my_contacts_box>ul>li a:hover::after"
+
+            ]},
+            {"PROJECT PAGE": [
+                ".proj_img_item._after",
+                ".proj_line._after",
+                ".project_info_box._after"
+            ]}]},
+        {"1_main_page.css": [
+            {"HEADER" : [
+                ".header_container",
+                ".header_logo",
+                "#my",
+                "#website",
+                "#portfolio",
+                {"top buttons": [
+                    ".topbar_container",
+                    ".nav-pills",
+                    ".nav-item",
+                    ".top_button_box",
+                    ".border",
+                    ".nav-link",
+                    ".top_button_item:hover",
+                    ".git_logo>a>img",
+                    ".git_logo>a>img:hover"
+                ]},
+                {"HMBRG MENU": [
+                    "#menu",
+                    "#menu-bar",
+                    ".bar",
+                    "#bar1",
+                    "#bar3",
+                    ".nav_hmbrg",
+                    ".nav_hmbrg ul",
+                    ".nav_hmbrg li",
+                    ".nav_hmbrg li a",
+                    ".nav_hmbrg li a:hover",
+                    ".menu-bg, #menu",
+                    ".menu-bg"
+                ]}
+            ]},
+            {"alert": [
+                ".alert_container",
+                ".alert-primary",
+                ".btn-close",
+                ".alert-dismissible .btn-close"
+            ]},
+            {"101_message.css" : [
+                ".ghost,",
+                ".glitch",
+                "#message",
+                "#message p",
+                "#animate",
+                ".title",
+                "#title_container",
+                "#title_container:before"
+            ]},
+            {"SECTION": [
+                {"ABOUT": [
+                    ".am_header",
+                    ".about_me_row",
+                    ".about_me_row_li",
+                    ".photo_container",
+                    ".photo_container>img",
+                    "#img_upto_1024",
+                    ".personal_information, .more_info_container",
+                    ".personal_information",
+                    ".pi_text",
+                    ".mi_text",
+                    ".mi_text.ru",
+                    ".wm_header",
+                    ".accordion_box"
+                ]},
+                {"MY PROJECTS" : [
+                    ".my_projects_row",
+                    ".mp_header",
+                    ".myprojects_container",
+                    ".myprojects_container>.col-lg-2",
+                    ".myprojects_container>.col-lg-2 img",
+                    ".anno_container,.this_website_container, .sqlproj_container, .parser_container, .telegrambot_container, .guianalitics_container",
+                    ".spacer_item",
+                    ".h-5 a",
+                    ".anno_container",
+                    ".this_website_container",
+                    ".sqlproj_container",
+                    ".parser_container",
+                    ".telegrambot_container",
+                    ".guianalitics_container",
+                    ".myprojects_container>.col-2 img",
+                    ".sqlproj_container img, .parser_container img, .telegrambot_container img, .guianalitics_container img",
+                    ".telegrambot_container img",
+                    ".excuseme_text"
+                ]},
+                {"WORKFLOW": [
+                    ".ep_header",
+                    ".col_courusel",
+                    ".carousel-inner",
+                    ".time_mngmt",
+                    ".tto",
+                    ".time_to",
+                    ".om_word",
+                    {"102_arrow.css": [
+                        "#arrowAnim",
+                        ".arro",
+                        ".arrow",
+                        ".arrowSliding",
+                        ".delay1",
+                        ".delay2",
+                        ".delay3"
+                    ]}
+                ]},
+                {"CONTACTS": [
+                    ".c_header",
+                    ".my_contacts",
+                    ".my_contacts_box",
+                    ".my_contacts_box>ul",
+                    ".my_contacts_box>ul>li",
+                    ".my_contacts_box>ul>li a",
+                    ".my_contacts_box>ul>li a::before",
+                    ".my_contacts_box>ul>li a::before",
+                    ".my_contacts_box>ul>li a span"
+                ]}
+            ]},
+            {"FOOTER": [
+                ".footer_container",
+                ".lang_area",
+                ".footer_vertical_line",
+                {"switch_lang_btns": [
+                    ".rus_lang",
+                    ".lang_buttons",
+                    ".lang_buttons .button",
+                    ".lang_buttons .rus_lang",
+                    ".btn.btn-primary.button"
+                ]}
+            ]}]},
+        {"2_project_page.css": [
+            ".proj_img_box",
+            ".proj_img_box img",
+            ".proj_img_item",
+            ".project_info_box",
+            ".code_col",
+            ".example_text",
+            ".before_code_text",
+            ".before_code_text2",
+            ".after_text2",
+            ".pre_box",
+            ".force-overflow"
+        ]},
+        {"mediarequests.css": [
+            {"max-width: 1750px": [
+                ".spacer_item",
+                ".myprojects_container>.col-lg-2",
+                ".my_contacts_box",
+                ".my_contacts_box>ul"
+            ]},
+            {"max-width: 1400px": [
+                ".photo_container",
+                "#img_upto_1024",
+                ".about_me_row",
+                ".personal_information_list",
+                ".my_contacts_box>ul>li"
+            ]},
+            {"max-width: 992px": [
+                ".top_button_box",
+                "#menu",
+                ".alert_container",
+                ".more_info_container",
+                ".personal_information_list",
+                "#img_upto_1024",
+                ".tto",
+                ".time_to",
+                ".personal_information"
+            ]},
+            {"max-width: 700px": [
+                ".menu-bg, #menu",
+                ".col_courusel",
+                ".time_mngmt",
+                ".carousel_item_text",
+                ".time_to",
+                ".myprojects_container",
+                ".my_contacts_box>ul"
+            ]},
+            {"max-width: 500px": [
+                ".personal_information_list",
+                ".myprojects_container",
+                ".my_contacts_box",
+                ".menu-bg, #menu",
+                ".git_logo"
+            ]},
+            {"max-width: 320px": [
+                ".alert_container"
+            ]},
+            {"Project page": [
+                {"max-width: 1200px": [
+                    ".proj_img_box img",
+                    ".force-overflow",
+                    ".project_info_box>ul",
+                    ".proj_img_box"
+                ]},
+                {"max-width: 576px": [
+                    ".proj_img_box"
+                ]},
+                {"max-width: 767px": [
+                    ".after_text",
+                    ".after_text2",
+                    ".force-overflow",
+                    ".example_text"
+                ]},
+                {"max-width: 425px": [
+                    ".force-overflow"
+                ]}
+            ]}
+        ]}
+        ],
+    "js": [
+        "animation_message2.js",
+        "bg_animation.js",
+        "block_animate.js",
+        "hmbg_btn.js",
+        "language.js",
+        "path.js"
+    ]
+}
+</code>
+                        </pre>
+                    </div>
+                    </div>
                     <div class="row after_code_text text-center">
-                        <span class="rus_lang">Я всегда стремлюсь сократить код, ведь так удобнее с ним работать и поддерживать в дальнейшем. <p>Просмотреть репозиторий с этим проектом Вы можете по <a href="#">этой</a> ссылке </p> </span>
-                        <span class="en_lang">I always try to keep the code short, because it makes it easier to work with and maintain in the future. You can view the repository with this project at <a href="#">this link</a> </p> </span>
+                        <span class="rus_lang">Я считаю, что "дьявол кроется в мелочах", поэтому свой сайт я сразу адаптировал под все устройства и сделал его внешне приятным глазу, вдруг мой будущий работодатель смотри его с телефона? </p> </span>
+                        <span class="en_lang">I believe that "Pope is Satan", so I immediately adapted my site to all devices and made it visually pleasing to the eye, what if my future employer look at it from a phone? </span>
                     </div>
                 </div>
                 <div class="col-1"></div>
@@ -202,15 +892,15 @@
             </div>
         </footer>
     </div>
-    <script src="source/scripts/block_animate.js"></script>
+    <script src="source/scripts/animation_intoscrn.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-    <script src="source/scripts/hmbg_btn.js"></script>
+    <script src="source/scripts/hmbrgr_menu_btn.js"></script>
     <script src="source/scripts/highlight.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-    <script src="source/scripts/language.js"></script>
+    <script src="source/scripts/change_language.js"></script>
     <script>hljs.highlightAll();</script>
 </body>
 </html>
