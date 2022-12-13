@@ -77,3 +77,35 @@
     margin-left: 0.5%;
     padding-bottom: 10px;
 }
+
+/* MY SITE PAGE*/
+.force-overflow {
+    border-radius: 10px;
+}
+.pre_box2 {
+    height: 300px;
+    width: 100%;
+    margin: auto auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #1e1e1e;
+    float: left;
+    border-radius: 10px;
+    text-align:left;
+}
+.json_col {
+    justify-content: center;
+
+}
+.pre_box2_1 {
+    height: 300px;
+    width: 40vw;
+    margin: auto auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #1e1e1e;
+    float: left;
+    border-radius: 10px;
+    text-align:left;
+    align-self: center;
+}
