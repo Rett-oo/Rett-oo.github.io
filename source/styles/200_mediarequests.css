@@ -172,6 +172,12 @@
         margin: auto;
         padding: 1% 0 1% 0;
     }
+    .json_row {
+        justify-content: center;
+    }
+    .pre_box2_1 {
+        width: 100%;
+    }
 }
 @media (max-width: 425px) {
     .force-overflow {
