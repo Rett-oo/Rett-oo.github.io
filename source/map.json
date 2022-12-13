@@ -51,10 +51,17 @@
             ]}]},
             {"ANIMATION CONTACTS LINK": [
                 ".my_contacts_box>ul>li a:hover::before",
+                ".my_contacts_box>ul>li a:hover span",
                 ".my_contacts_box>ul>li a::after",
                 ".my_contacts_box>ul>li a::after",
                 ".my_contacts_box>ul>li a:hover::after"
-        ]}]},
+
+            ]},
+            {"PROJECT PAGE": [
+                ".proj_img_item._after",
+                ".proj_line._after",
+                ".project_info_box._after"
+            ]}]},
         {"1_main_page.css": [
             {"HEADER" : [
                 ".header_container",
@@ -64,6 +71,7 @@
                 "#portfolio",
                 {"top buttons": [
                     ".topbar_container",
+                    ".nav-pills",
                     ".nav-item",
                     ".top_button_box",
                     ".border",
@@ -124,6 +132,7 @@
                     ".mp_header",
                     ".myprojects_container",
                     ".myprojects_container>.col-lg-2",
+                    ".myprojects_container>.col-lg-2 img",
                     ".anno_container,.this_website_container, .sqlproj_container, .parser_container, .telegrambot_container, .guianalitics_container",
                     ".spacer_item",
                     ".h-5 a",
@@ -176,23 +185,36 @@
                     ".rus_lang",
                     ".lang_buttons",
                     ".lang_buttons .button",
-                    ".lang_buttons .rus_lang"
+                    ".lang_buttons .rus_lang",
+                    ".btn.btn-primary.button"
                 ]}
             ]}]},
         {"2_project_page.css": [
-
+            ".proj_img_box",
+            ".proj_img_box img",
+            ".proj_img_item",
+            ".project_info_box",
+            ".code_col",
+            ".example_text",
+            ".before_code_text",
+            ".before_code_text2",
+            ".after_text2",
+            ".pre_box",
+            ".force-overflow"
         ]},
         {"mediarequests.css": [
             {"max-width: 1750px": [
                 ".spacer_item",
                 ".myprojects_container>.col-lg-2",
-                ".my_contacts_box"
+                ".my_contacts_box",
+                ".my_contacts_box>ul"
             ]},
             {"max-width: 1400px": [
                 ".photo_container",
                 "#img_upto_1024",
                 ".about_me_row",
-                ".personal_information_list"
+                ".personal_information_list",
+                ".my_contacts_box>ul>li"
             ]},
             {"max-width: 992px": [
                 ".top_button_box",
@@ -202,7 +224,8 @@
                 ".personal_information_list",
                 "#img_upto_1024",
                 ".tto",
-                ".time_to"
+                ".time_to",
+                ".personal_information"
             ]},
             {"max-width: 700px": [
                 ".menu-bg, #menu",
@@ -222,6 +245,26 @@
             ]},
             {"max-width: 320px": [
                 ".alert_container"
+            ]},
+            {"Project page": [
+                {"max-width: 1200px": [
+                    ".proj_img_box img",
+                    ".force-overflow",
+                    ".project_info_box>ul",
+                    ".proj_img_box"
+                ]},
+                {"max-width: 576px": [
+                    ".proj_img_box"
+                ]},
+                {"max-width: 767px": [
+                    ".after_text",
+                    ".after_text2",
+                    ".force-overflow",
+                    ".example_text"
+                ]},
+                {"max-width: 425px": [
+                    ".force-overflow"
+                ]}
             ]}
         ]}
         ],
