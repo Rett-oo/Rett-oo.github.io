@@ -8,7 +8,6 @@
         TEXT PROPERTIES
 */
 
-
 /* HEADER */
 .header_container {
     display: flex;
@@ -166,10 +165,10 @@
 }
 .nav_hmbrg ul {
     padding: 0 22px;
-  }
+}
 .nav_hmbrg li {
-    list-style: none;
     padding: 12px 0;
+    list-style: none;
 }
 .nav_hmbrg li a {
     color: rgb(59, 62, 99);
